@@ -141,7 +141,7 @@ class AboutUs extends React.Component{
                       {/* <h4 className="text-center text-info" ><strong>Documentation</strong></h4> */}
                       It is said that the words can be like X-rays if you use them<br/> properly, they'll go
                       through anything.<br/>
-                      
+                      You read and you're pierced.<br/>
                       So last but not the least, we have a magnificent and<br/> outstanding set of members in
                       documentation team who are responsible for all the excellent content.
                     </div>
