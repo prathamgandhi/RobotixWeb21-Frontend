@@ -1,9 +1,28 @@
 
 import React, { Fragment } from 'react';
-
-
+import api from "../service.js";
+function printObject(o) {
+  var out = "";
+  for (var p in o) {
+    out += p + ": " + o[p] ; 
+  }
+  return<div style={{color:"red"}}>{out}</div>;
+}
 class AboutUs extends React.Component{
+  constructor(){
+    super();
+    this.state ={
+    data:{},
+  };
+  } 
+  
+  componentDidMount(){
+   api.get("about").then((res) => {
+     this.setState({data:res.data});
+   });
 
+
+   }
     render(){
         return(
             <Fragment>
@@ -42,10 +61,13 @@ class AboutUs extends React.Component{
       <div className="aboutcont">
         <div className="page-title-sim ">
           About Us
+
         </div>
 
         <p style={{fontSize:"35px",color:"#1d8cf8",fontWeight:"bold"}}>Who are we ??</p>
-        <p>The Robotix Club of NIT Raipur is the perfect combination of innovators, contributors and experts in the
+        <p>
+          {printObject(this.state.data)} <br/><br/>
+        The Robotix Club of NIT Raipur is the perfect combination of innovators, contributors and experts in the
           field
           of Robotics. The club has been inspiring minds ever since its inception in 2014.
           The foundation of Robotix Club was laid by a group of enthusiastic and ardent students with a vision to
