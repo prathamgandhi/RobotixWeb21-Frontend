@@ -18,7 +18,8 @@ class AboutUs extends React.Component{
   
   componentDidMount(){
    api.get("about").then((res) => {
-     this.setState({data:res.data});
+    console.log(res); 
+    this.setState({data:res.data});
    });
 
 
