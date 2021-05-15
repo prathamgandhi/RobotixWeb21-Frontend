@@ -159,8 +159,8 @@ overflow: hidden;
 
 .card-register .card-header .card-title {
 position: relative;
-font-size: 3.5rem;
-font-weight: 900;
+font-size: 4rem;
+font-weight: 800;
 color: #222a42;
 text-transform: uppercase;
 top: 10px;
@@ -247,8 +247,13 @@ visibility: visible;
 }
 }
 .aboutcont{
-margin:100px !important;}
-@media screen and (max-width:500px){.aboutcont{margin:20px;}}
+padding: 70px !important;
+background-image: url('back.png');
+background-size: contain;
+
+
+}
+
   .squares.square8 {
     animation: move-left-right 6s infinite;
     height: 200px;

@@ -16,31 +16,15 @@ class AboutUs extends React.Component{
     
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      {/* <img className="card-img" src="images/Square.jpg" alt="Card image">  */}
+{/* <img className="card-img" src="images/Square.jpg" alt="Card image">  */}
 
       <div className="aboutcont">
-        <div className="page-title-sim header header--shadow header--pushDown" style={{color:"white"}}>
+      
+        <div className="page-title-sim " style={{color:"white"}}>
           About Us
         </div>
         <br /> <br />
-        <p style={{fontSize:"35px",color:"#1d8cf8",fontWeight:"bold", textAlign:"center"}}>Who are we ??</p>
+        <p style={{fontSize:"35px",color:"#c221a9",fontWeight:"bold", textAlign:"center"}}>Who are we ??</p>
         <br />
         <p>The Robotix Club of NIT Raipur is the perfect combination of innovators, contributors and experts in the
           field
@@ -53,7 +37,7 @@ class AboutUs extends React.Component{
           the club.
         </p>
         <br /> <br />
-        <p style={{fontSize:"35px",color:"#1d8cf8",fontWeight:"bold", textAlign:"center"}}>Our Vision</p>
+        <p style={{fontSize:"35px",color:"#c221a9",fontWeight:"bold", textAlign:"center"}}>Our Vision</p>
         <p>Robotix Club NITRR strives to develop technological skills in the diverse field of mechatronics and robotics
           by
           transcending the theoretical knowledge into live application and providing live simple yet creative solution
