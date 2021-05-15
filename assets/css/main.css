@@ -190,6 +190,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    
 }
 
 /*
@@ -749,6 +750,7 @@ template {
 
 html {
     font-size: 18px;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
