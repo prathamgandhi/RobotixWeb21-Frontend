@@ -1,17 +1,13 @@
-import React from "react";
-import AboutUs from "./components/AboutUs";
-import Gallery from "./components/Gallery";
-import Main from "./components/Main"
+import React, { Fragment } from "react";
+import ComingSoon from "./components/ComingSoon"
 
 
 
 function App() {
   return (
-    <div>
-     <Main />
-     <AboutUs />
-     <Gallery />
-    </div>
+    <Fragment>
+      <ComingSoon />
+    </Fragment>
   );
 }
 
