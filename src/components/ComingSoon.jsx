@@ -26,7 +26,7 @@ useEffect(() => {
    setTimeout(() => {
     setTimeLeft(calculateTimeLeft());
   }, 1000);
-  console.log(timeLeft);
+  
 });
     
         return (
