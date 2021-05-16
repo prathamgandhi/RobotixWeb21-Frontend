@@ -1,16 +1,9 @@
 import React from "react";
-import AboutUs from "./components/AboutUs";
-import Gallery from "./components/Gallery";
-import VantaR from "./components/Main";
-import Events from "./components/Events";
+import Main from "./components/Main.jsx" 
 function App() {
   return (
     <div>
-     
-     <VantaR />
-     <AboutUs />
-     <Gallery />
-     <Events />
+     <Main /> 
     </div>
   );
 }
