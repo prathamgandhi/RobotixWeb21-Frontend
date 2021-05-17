@@ -3,7 +3,7 @@ import {Fragment} from 'react'
 const Pricing = () => {
     return (
         <Fragment>
-            <section className="pricing-section padding-top oh padding-bottom pb-md-0 bg_img pos-rel" data-background="./images/bg/pricing-bg.jpg" id="pricing">
+            <section className="pricing-section padding-top oh padding-bottom pb-md-0 bg_img pos-rel" data-background="./assets/images/bg/pricing-bg.jpg" id="pricing">
         <div className="top-shape d-none d-md-block">
             <img src="./assets/css/img/top-shape.png" alt="css" />
         </div>
