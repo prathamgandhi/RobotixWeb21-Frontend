@@ -3,6 +3,11 @@ import React, {Fragment} from "react";
 function Contact(){
    return (
   <Fragment>
+  <section className="page-header single-header bg_img oh" data-background="./assets/images/page-header.png">
+        <div className="bottom-shape d-none d-md-block">
+            <img src="./assets/css/img/page-header.png" alt="css"/>
+        </div>
+    </section>
        <section className="contact-section padding-top padding-bottom">
         <div className="container">
             <div className="section-header mw-100 cl-white">
@@ -46,7 +51,7 @@ function Contact(){
                 <div className="col-lg-4">
                     <div className="contact-content">
                         <div className="man d-lg-block d-none">
-                            <img src="./images/contact/man.png" alt="bg"/>
+                            <img src="./assets/images/contact/man.png" alt="bg"/>
                         </div>
                         <div className="section-header left-style">
                             <h3 className="title">Have questions?</h3>
@@ -57,7 +62,7 @@ function Contact(){
                         <div className="contact-area">
                             <div className="contact-item">
                                 <div className="contact-thumb">
-                                    <img src="./images/contact/contact1.png" alt="contact"/>
+                                    <img src="./assets/images/contact/contact1.png" alt="contact"/>
                                 </div>
                                 <div className="contact-contact">
                                     <h5 className="subtitle">Email Us</h5>
@@ -66,7 +71,7 @@ function Contact(){
                             </div>
                             <div className="contact-item">
                                 <div className="contact-thumb">
-                                    <img src="./images/contact/contact2.png" alt="contact"/>
+                                    <img src="./assets/images/contact/contact2.png" alt="contact"/>
                                 </div>
                                 <div className="contact-contact">
                                     <h5 className="subtitle">Call Us</h5>
@@ -76,7 +81,7 @@ function Contact(){
                             </div>
                             <div className="contact-item">
                                 <div className="contact-thumb">
-                                    <img src="./images/contact/contact3.png" alt="contact"/>
+                                    <img src="./assets/images/contact/contact3.png" alt="contact"/>
                                 </div>
                                 <div className="contact-contact">
                                     <h5 className="subtitle">Visit Us</h5>

@@ -29,7 +29,7 @@ function Team(){
                         <div className="col-lg-4 col-md-6">
                             <div className="team-item">
                                 <div className="team-thumb">
-                                    <img src="./images/team/team1.png" alt="team"/>
+                                    <img src="./assets/images/team/team1.png" alt="team"/>
                                 </div>
                                 <div className="team-content">
                                     <h4 className="title">
@@ -43,7 +43,7 @@ function Team(){
                         <div className="col-lg-4 col-md-6">
                             <div className="team-item">
                                 <div className="team-thumb">
-                                    <img src="./images/team/team2.png" alt="team"/>
+                                    <img src="./assets/images/team/team2.png" alt="team"/>
                                 </div>
                                 <div className="team-content">
                                     <h4 className="title">
@@ -57,7 +57,7 @@ function Team(){
                         <div className="col-lg-4 col-md-6">
                             <div className="team-item">
                                 <div className="team-thumb">
-                                    <img src="./images/team/team3.png" alt="team"/>
+                                    <img src="./assets/images/team/team3.png" alt="team"/>
                                 </div>
                                 <div className="team-content">
                                     <h4 className="title">
@@ -71,7 +71,7 @@ function Team(){
                         <div className="col-lg-4 col-md-6">
                             <div className="team-item">
                                 <div className="team-thumb">
-                                    <img src="./images/team/team4.png" alt="team"/>
+                                    <img src="./assets/images/team/team4.png" alt="team"/>
                                 </div>
                                 <div className="team-content">
                                     <h4 className="title">
@@ -85,7 +85,7 @@ function Team(){
                         <div className="col-lg-4 col-md-6">
                             <div className="team-item">
                                 <div className="team-thumb">
-                                    <img src="./images/team/team5.png" alt="team"/>
+                                    <img src="./assets/images/team/team5.png" alt="team"/>
                                 </div>
                                 <div className="team-content">
                                     <h4 className="title">
@@ -99,7 +99,7 @@ function Team(){
                         <div className="col-lg-4 col-md-6">
                             <div className="team-item">
                                 <div className="team-thumb">
-                                    <img src="./images/team/team6.png" alt="team"/>
+                                    <img src="./assets/images/team/team6.png" alt="team"/>
                                 </div>
                                 <div className="team-content">
                                     <h4 className="title">
@@ -117,7 +117,7 @@ function Team(){
                         <div className="col-lg-4 col-md-6">
                             <div className="team-item">
                                 <div className="team-thumb">
-                                    <img src="./images/team/team1.png" alt="team"/>
+                                    <img src="./assets/images/team/team1.png" alt="team"/>
                                 </div>
                                 <div className="team-content">
                                     <h4 className="title">
@@ -131,7 +131,7 @@ function Team(){
                         <div className="col-lg-4 col-md-6">
                             <div className="team-item">
                                 <div className="team-thumb">
-                                    <img src="./images/team/team2.png" alt="team"/>
+                                    <img src="./assets/images/team/team2.png" alt="team"/>
                                 </div>
                                 <div className="team-content">
                                     <h4 className="title">
@@ -145,7 +145,7 @@ function Team(){
                         <div className="col-lg-4 col-md-6">
                             <div className="team-item">
                                 <div className="team-thumb">
-                                    <img src="./images/team/team3.png" alt="team"/>
+                                    <img src="./assets/images/team/team3.png" alt="team"/>
                                 </div>
                                 <div className="team-content">
                                     <h4 className="title">
@@ -159,7 +159,7 @@ function Team(){
                         <div className="col-lg-4 col-md-6">
                             <div className="team-item">
                                 <div className="team-thumb">
-                                    <img src="./images/team/team4.png" alt="team"/>
+                                    <img src="./assets/images/team/team4.png" alt="team"/>
                                 </div>
                                 <div className="team-content">
                                     <h4 className="title">
@@ -173,7 +173,7 @@ function Team(){
                         <div className="col-lg-4 col-md-6">
                             <div className="team-item">
                                 <div className="team-thumb">
-                                    <img src="./images/team/team5.png" alt="team"/>
+                                    <img src="./assets/images/team/team5.png" alt="team"/>
                                 </div>
                                 <div className="team-content">
                                     <h4 className="title">
@@ -187,7 +187,7 @@ function Team(){
                         <div className="col-lg-4 col-md-6">
                             <div className="team-item">
                                 <div className="team-thumb">
-                                    <img src="./images/team/team6.png" alt="team"/>
+                                    <img src="./assets/images/team/team6.png" alt="team"/>
                                 </div>
                                 <div className="team-content">
                                     <h4 className="title">
@@ -205,7 +205,7 @@ function Team(){
                 <div className="col-lg-4 col-md-6">
                     <div className="team-item">
                         <div className="team-thumb">
-                            <img src="./images/team/team1.png" alt="team"/>
+                            <img src="./assets/images/team/team1.png" alt="team"/>
                         </div>
                         <div className="team-content">
                             <h4 className="title">
@@ -219,7 +219,7 @@ function Team(){
                 <div className="col-lg-4 col-md-6">
                     <div className="team-item">
                         <div className="team-thumb">
-                            <img src="./images/team/team2.png" alt="team"/>
+                            <img src="./assets/images/team/team2.png" alt="team"/>
                         </div>
                         <div className="team-content">
                             <h4 className="title">
@@ -233,7 +233,7 @@ function Team(){
                 <div className="col-lg-4 col-md-6">
                     <div className="team-item">
                         <div className="team-thumb">
-                            <img src="./images/team/team3.png" alt="team"/>
+                            <img src="./assets/images/team/team3.png" alt="team"/>
                         </div>
                         <div className="team-content">
                             <h4 className="title">
@@ -247,7 +247,7 @@ function Team(){
                 <div className="col-lg-4 col-md-6">
                     <div className="team-item">
                         <div className="team-thumb">
-                            <img src="./images/team/team4.png" alt="team"/>
+                            <img src="./assets/images/team/team4.png" alt="team"/>
                         </div>
                         <div className="team-content">
                             <h4 className="title">
@@ -261,7 +261,7 @@ function Team(){
                 <div className="col-lg-4 col-md-6">
                     <div className="team-item">
                         <div className="team-thumb">
-                            <img src="./images/team/team5.png" alt="team"/>
+                            <img src="./assets/images/team/team5.png" alt="team"/>
                         </div>
                         <div className="team-content">
                             <h4 className="title">
@@ -275,7 +275,7 @@ function Team(){
                 <div className="col-lg-4 col-md-6">
                     <div className="team-item">
                         <div className="team-thumb">
-                            <img src="./images/team/team6.png" alt="team"/>
+                            <img src="./assets/images/team/team6.png" alt="team"/>
                         </div>
                         <div className="team-content">
                             <h4 className="title">

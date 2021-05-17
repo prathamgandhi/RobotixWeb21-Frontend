@@ -3,12 +3,12 @@ import React, {Fragment} from "react";
 function Footer(){
    return (
   <Fragment>
-       <footer className="footer-section bg_img" data-background="./images/footer/footer-bg.jpg">
+       <footer className="footer-section bg_img" data-background="./assets/images/footer/footer-bg.jpg">
             <div className="container">
                 <div className="footer-top padding-top padding-bottom">
                     <div className="logo">
                         <a href="#0">
-                            <img src="./images/logo/footer-logo.png" alt="logo"/>
+                            <img src="./assets/images/logo/footer-logo.png" alt="logo"/>
                         </a>
                     </div>
                     <ul className="social-icons">
