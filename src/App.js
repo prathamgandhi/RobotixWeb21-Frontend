@@ -15,7 +15,7 @@ const cookies = new Cookies()
 function renewUserToken() {
     return new Promise((resolve, reject) => {
         const refreshToken = cookies.get('refresh_token')
-        return axios.post('/api' + '/token/refresh/', {'refresh' : refreshToken})
+        return axios.post('/api/token/refresh/', {'refresh' : refreshToken})
         .then((response) => {
         resolve(response.data);
         })
