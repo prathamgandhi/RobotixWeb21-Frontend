@@ -9,13 +9,16 @@ import Pricing2 from "./components/Pricing2"
 import Team from "./components/Team";
 import Contact from "./components/Contact"
 import Footer from"./components/Footer";
+import Signin from "./components/Signin.jsx";
+import api from "./service"
+
 
 
 const cookies = new Cookies()
 function renewUserToken() {
     return new Promise((resolve, reject) => {
         const refreshToken = cookies.get('refresh_token')
-        return axios.post('/api' + '/token/refresh/', {'refresh' : refreshToken})
+        return api.post('/token/refresh/', {'refresh' : refreshToken})
         .then((response) => {
         resolve(response.data);
         })
@@ -64,6 +67,7 @@ function App() {
      <Pricing2 />
       <Team />
       <Contact />
+      <Signin/>
       <Footer />
     </div>
   );

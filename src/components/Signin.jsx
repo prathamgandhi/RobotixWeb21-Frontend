@@ -1,14 +1,37 @@
-import React, {Fragment} from "react";
+import React, {Fragment, useEffect} from "react";
+import Cookies from "universal-cookie";
+
+import axios from "axios";
+import api from "../service";
 
 function Signin(){
+
+
+    const cookies= new Cookies();
+    
+
+    useEffect(() => {
+        console.log("useeffct")
+        
+        api.post("/users/login/",{email:"nik@gmail.com", password: "gaurav-dhruw"}).then(response=>{
+            console.log(response);
+
+            console.log(cookies.getAll()) 
+        })
+        
+
+    }, []);
+
+
+
    return (
   <Fragment>
-        <div className="account-section bg_img" data-background="./images/account-bg.jpg">
+        <div className="account-section bg_img" data-background="./assets/images/account-bg.jpg">
         <div className="container">
             <div className="account-title text-center">
                 <a href="index.html" className="back-home"><i className="fas fa-angle-left"></i><span>Back <span className="d-none d-sm-inline-block">To Robotix Club</span></span></a>
                 <a href="#0" className="logo">
-                    <img src="./images/logo/logo.png" alt="logo"/>
+                    <img src="./assets/images/logo/logo.png" alt="logo"/>
                 </a>
             </div>
             <div className="account-wrapper">
@@ -29,14 +52,14 @@ function Signin(){
                         </div>
                     </form>
                 </div>
-                <div className="or">
+                {/* <div className="or">
                     <span>OR</span>
                 </div>
                 <div className="account-header pb-0">
                     <span className="d-block mb-30 mt-2">Sign up with your work email</span>
-                    <a href="#0" className="sign-in-with"><img src="./images/icon/google.png" alt="icon"/><span>Sign Up with Google</span></a>
+                    <a href="#0" className="sign-in-with"><img src="./assets/images/icon/google.png" alt="icon"/><span>Sign Up with Google</span></a>
                     <span className="d-block mt-15">Don't have an account? <a href="sign-up.html">Sign Up Here</a></span>
-                </div>
+                </div> */}
             </div>
         </div>
     </div>
