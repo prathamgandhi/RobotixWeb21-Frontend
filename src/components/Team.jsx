@@ -23,7 +23,7 @@ function Team() {
             
                 <div className="team-profile mt-5">
                     <div className="row mb-5">
-                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style={{animationDelay: '0.8s', opacity: '1'}}>
                             <div className="d-flex team-member">
                                 <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
                                     <img src="https://image.flaticon.com/icons/png/512/194/194938.png" alt="team-profile-1" className="rounded-circle" width="128"/>
@@ -40,7 +40,7 @@ function Team() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style={{animationDelay: '0.8s', opacity: '1'}}>
                             <div className="d-flex team-member">
                                 <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
                                     <img src="https://image.flaticon.com/icons/png/512/194/194938.png" alt="team-profile-1" className="rounded-circle" width="128"/>
@@ -57,7 +57,7 @@ function Team() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style={{animationDelay: '0.8s', opacity: '1'}}>
                             <div className="d-flex team-member">
                                 <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
                                     <img src="https://image.flaticon.com/icons/png/512/194/194938.png" alt="team-profile-1" className="rounded-circle" width="128"/>
@@ -74,7 +74,7 @@ function Team() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style={{animationDelay: '0.8s', opacity: '1'}}>
                             <div className="d-flex team-member">
                                 <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
                                     <img src="https://image.flaticon.com/icons/png/512/194/194938.png" alt="team-profile-1" className="rounded-circle" width="128"/>
@@ -91,7 +91,7 @@ function Team() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style={{animationDelay: '0.8s', opacity: '1'}}>
                             <div className="d-flex team-member">
                                 <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
                                     <img src="https://image.flaticon.com/icons/png/512/194/194938.png" alt="team-profile-1" className="rounded-circle" width="128"/>
@@ -108,7 +108,7 @@ function Team() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style={{animationDelay: '0.8s', opacity: '1'}}>
                             <div className="d-flex team-member">
                                 <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
                                     <img src="https://image.flaticon.com/icons/png/512/194/194938.png" alt="team-profile-1" className="rounded-circle" width="128"/>
@@ -125,7 +125,7 @@ function Team() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style={{animationDelay: '0.8s', opacity: '1'}}>
                             <div className="d-flex team-member">
                                 <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
                                     <img src="https://image.flaticon.com/icons/png/512/194/194938.png" alt="team-profile-1" className="rounded-circle" width="128"/>
@@ -142,7 +142,7 @@ function Team() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style={{animationDelay: '0.8s', opacity: '1'}}>
                             <div className="d-flex team-member">
                                 <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
                                     <img src="https://image.flaticon.com/icons/png/512/194/194938.png" alt="team-profile-1" className="rounded-circle" width="128"/>
@@ -159,7 +159,7 @@ function Team() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style={{animationDelay: '0.8s', opacity: '1'}}>
                             <div className="d-flex team-member">
                                 <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
                                     <img src="https://image.flaticon.com/icons/png/512/194/194938.png" alt="team-profile-1" className="rounded-circle" width="128"/>
@@ -191,7 +191,7 @@ function Team() {
             
                 <div className="team-profile mt-5">
                     <div className="row mb-5">
-                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style={{animationDelay: '0.8s', opacity: '1'}}>
                             <div className="d-flex team-member">
                                 <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
                                     <img src="https://image.flaticon.com/icons/png/512/194/194938.png" alt="team-profile-1" className="rounded-circle" width="128"/>
@@ -208,7 +208,7 @@ function Team() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" dataAnimationDelay="0.8s" style={{animationDelay: '0.8s', opacity: '1'}}>
                             <div className="d-flex team-member">
                                 <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
                                     <img src="https://image.flaticon.com/icons/png/512/194/194938.png" alt="team-profile-1" className="rounded-circle" width="128"/>
@@ -225,7 +225,7 @@ function Team() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style={{animationDelay: '0.8s', opacity: '1'}}>
                             <div className="d-flex team-member">
                                 <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
                                     <img src="https://image.flaticon.com/icons/png/512/194/194938.png" alt="team-profile-1" className="rounded-circle" width="128"/>
@@ -242,7 +242,7 @@ function Team() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style={{animationDelay: '0.8s', opacity: '1'}}>
                             <div className="d-flex team-member">
                                 <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
                                     <img src="https://image.flaticon.com/icons/png/512/194/194938.png" alt="team-profile-1" className="rounded-circle" width="128"/>
@@ -259,7 +259,7 @@ function Team() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style= {{animationDelay: '0.8s', opacity: '1'}}>
                             <div className="d-flex team-member">
                                 <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
                                     <img src="https://image.flaticon.com/icons/png/512/194/194938.png" alt="team-profile-1" className="rounded-circle" width="128"/>
@@ -292,7 +292,7 @@ function Team() {
             
                 <div className="team-profile mt-5">
                     <div className="row mb-5">
-                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style={{animationDelay: '0.8s', opacity: '1'}}>
                             <div className="d-flex team-member">
                                 <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
                                     <img src="https://image.flaticon.com/icons/png/512/194/194938.png" alt="team-profile-1" className="rounded-circle" width="128"/>
@@ -309,7 +309,7 @@ function Team() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style={{animationDelay: '0.8s', opacity: '1'}}>
                             <div className="d-flex team-member">
                                 <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
                                     <img src="https://image.flaticon.com/icons/png/512/194/194938.png" alt="team-profile-1" className="rounded-circle" width="128"/>
@@ -326,7 +326,7 @@ function Team() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style="animation-delay: 0.8s; opacity: 1;">
+                        <div className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style={{animationDelay: '0.8s', opacity: '1'}}>
                             <div className="d-flex team-member">
                                 <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
                                     <img src="https://image.flaticon.com/icons/png/512/194/194938.png" alt="team-profile-1" className="rounded-circle" width="128"/>
@@ -343,10 +343,6 @@ function Team() {
                                 </div>
                             </div>
                         </div>
-                     
-    
-                      
-                       
                     </div>
                 </div>
             </div>

@@ -57,7 +57,7 @@ function Contact(){
                             <h3 className="title">Have questions?</h3>
                             <p>Have questions about payments or price 
                                 plans? We have answers!</p>
-                            <a href="#0">Read F.A.Q <i className="fas fa-angle-right"></i></a>
+                            {/* <a href="#0">Read F.A.Q <i className="fas fa-angle-right"></i></a> */}
                         </div>
                         <div className="contact-area">
                             <div className="contact-item">

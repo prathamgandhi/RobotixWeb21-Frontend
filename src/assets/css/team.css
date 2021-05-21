@@ -118,14 +118,14 @@
 .team .profile .social-profile a {
   text-decoration : none;
   font-size : 1.125rem;
-  color : #FFFFFF;
+  color : #FFFFFF !important;
 }
 .font-medium {
   font-size : 1.125rem;
   padding-right: 7px;
 }
 .grey-accent2 {
-  color : #FFFFFF;
+  color : #FFFFFF !important;
 }
 .profile{
 padding-left: 20px;
@@ -159,7 +159,7 @@ padding-left: 20px;
     color: rgb(255, 255, 255);
 }
 .tabcontent {
-  display: none;
+  /* display: none; */
 }
 @media screen and (max-width:500px) {
   

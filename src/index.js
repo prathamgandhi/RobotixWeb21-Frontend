@@ -11,6 +11,6 @@ import './assets/css/owl.min.css';
 import './assets/css/magnific-popup.css';
 import './assets/css/flaticon.css';
 import './assets/css/main.css';
-
+import './assets/css/team.css';
 ReactDOM.render(<App />, document.getElementById("root"));
 registerServiceWorker();

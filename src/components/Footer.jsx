@@ -8,7 +8,7 @@ function Footer(){
                 <div className="footer-top padding-top padding-bottom">
                     <div className="logo">
                         <a href="#0">
-                            <img src="./assets/images/logo/footer-logo.png" alt="logo"/>
+                            <img src="./assets/images/robotixLogo.png" style={{height:'140px', width:'350px', position:'relative', right:'100px'}} alt="logo"/>
                         </a>
                     </div>
                     <ul className="social-icons">
