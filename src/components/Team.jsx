@@ -3,7 +3,13 @@ import React, { Fragment } from "react";
 function Team() {
     return (
         <Fragment>
-           
+            <div className="section-header">
+                <h5 className="cate">Meet our most valued</h5>
+                <h2 className="title">Expert Team Members</h2>
+                <p>
+                    Our team of creative programmers,marketing experts, and members .we are to be doing what we love.
+                </p>
+            </div>
 
     <div className="team-tab">
         <button className="tablinks" onclick="TeamDomain(event, 'core-members')" id="default-team-tab">Core Members</button>
