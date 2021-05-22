@@ -159,7 +159,7 @@ padding-left: 20px;
     color: rgb(255, 255, 255);
 }
 .tabcontent {
-  /* display: none; */
+   display: none; 
 }
 @media screen and (max-width:500px) {
   
