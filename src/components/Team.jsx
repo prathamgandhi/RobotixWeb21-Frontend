@@ -3,8 +3,8 @@ import React, { Fragment } from "react";
 
 
 export const Team = () => {
-    const changeDomain = (domain) => {
-        window.TeamDomain(domain);
+    const changeDomain = (domain,j) => {
+        window.TeamDomain(domain,j);
       };
     return (
         <Fragment>
@@ -19,9 +19,9 @@ export const Team = () => {
         </div>
 
         <div className="team-tab">
-            <button className="tablinks" onClick={() => {changeDomain("core-members")}} >Core Members</button>
-            <button className="tablinks" onClick={() => {changeDomain("managers")}} >Managers</button>
-            <button className="tablinks" onClick={() => {changeDomain("head-coordinator")}} >head-coordinator</button>
+            <button className="tablinks" onClick={() => {changeDomain("core-members",'0')}} >Core Members</button>
+            <button className="tablinks" onClick={() => {changeDomain("managers",'1')}} >Managers</button>
+            <button className="tablinks" onClick={() => {changeDomain("head-coordinator",'2')}} >head-coordinator</button>
         </div>
 
         <div id="core-members" className="tabcontent">
