@@ -1,6 +1,11 @@
-    window.onload = function(){document.getElementById("core-members").style.display = "block";
+   
+   
+   window.onload = function(){document.getElementById("core-members").style.display = "block";
     document.getElementById("default-team-tab").className+=" team-active";};
-    function TeamDomain(evt, cityName) {
+
+
+
+    function TeamDomain(domain) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
@@ -10,6 +15,7 @@
       for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" team-active", "");
       }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " team-active";
+      document.getElementById(domain).style.display = "block";
+      
     }
+   
