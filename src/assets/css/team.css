@@ -1,0 +1,179 @@
+#team .team-width p {
+  color : #FFFFFF;
+}
+
+#team .profile .social-profile a {
+  color : #C7B8FF !important;
+}
+
+        /* Team section : Team & Advisor section with team image and description */
+.team .team-width span {
+  display : block;
+  font-size : 2rem;
+  font-weight : 700;
+  color : #FFFFFF;
+}
+
+.team .team-img {
+  padding : 7px;
+  border-radius : 50%;
+  cursor : pointer;
+  background : -webkit-linear-gradient(45deg, #29BEFF, #1C76FE);
+  background :    -moz-linear-gradient(45deg, #29BEFF, #1C76FE);
+  background :      -o-linear-gradient(45deg, #29BEFF, #1C76FE);
+  background :         linear-gradient(45deg, #29BEFF, #1C76FE);
+  -webkit-box-shadow : 0 0 12px 0 #29BEFF;
+          box-shadow : 0 0 12px 0 #29BEFF;
+  position : relative;
+  z-index : 1;
+}
+.team .team-img:hover {
+  -webkit-box-shadow : 0 0 12px 0 #FF4137;
+          box-shadow : 0 0 12px 0 #FF4137;
+  background : -webkit-linear-gradient(45deg, #FF4137, #FDC800);
+  background :    -moz-linear-gradient(45deg, #FF4137, #FDC800);
+  background :      -o-linear-gradient(45deg, #FF4137, #FDC800);
+  background :         linear-gradient(45deg, #FF4137, #FDC800);
+}
+.team .team-img:hover:before {
+  border-image-source : linear-gradient(to top, #FF4137, #FDC800);
+  -webkit-transform : rotate(55deg);
+     -moz-transform : rotate(55deg);
+      -ms-transform : rotate(55deg);
+       -o-transform : rotate(55deg);
+          transform : rotate(55deg);
+}
+.team .team-img:hover ~ .team-icon {
+  background : -webkit-linear-gradient(45deg, #FF4137, #FDC800);
+  background :    -moz-linear-gradient(45deg, #FF4137, #FDC800);
+  background :      -o-linear-gradient(45deg, #FF4137, #FDC800);
+  background :         linear-gradient(45deg, #FF4137, #FDC800);
+}
+.team .team-img img {
+  border : 5px solid #FFFFFF;
+}
+.team .team-img:before {
+  content : '';
+  position : absolute;
+  height : 200px;
+  top : -28px;
+  left : 50%;
+  z-index : -1;
+  -webkit-transform : rotate(45deg);
+     -moz-transform : rotate(45deg);
+      -ms-transform : rotate(45deg);
+       -o-transform : rotate(45deg);
+          transform : rotate(45deg);
+  border-right : 3px solid #29BEFF;
+  border-image-source : linear-gradient(to top, #29BEFF, #1C76FE);
+  border-image-slice : 0.5;
+  -webkit-transition-property : -webkit-transform;
+          transition-property : -webkit-transform;
+       -o-transition-property :      -o-transform;
+     -moz-transition-property :         transform, -moz-transform;
+          transition-property :         transform;
+          transition-property :         transform, -webkit-transform, -moz-transform, -o-transform;
+  -webkit-transition-duration : 0.5s;
+     -moz-transition-duration : 0.5s;
+       -o-transition-duration : 0.5s;
+          transition-duration : 0.5s;
+}
+
+.team .team-icon {
+  position : absolute;
+  left : 135px;
+  bottom : 25%;
+  z-index : 1;
+  border-radius : 50%;
+  background : -webkit-linear-gradient(45deg, #29BEFF, #1C76FE);
+  background :    -moz-linear-gradient(45deg, #29BEFF, #1C76FE);
+  background :      -o-linear-gradient(45deg, #29BEFF, #1C76FE);
+  background :         linear-gradient(45deg, #29BEFF, #1C76FE);
+  padding : 0.2rem 0.1rem 0.017rem 0.17rem;
+}
+.team .team-icon i {
+  background : #FFFFFF;
+  padding : 0.25rem 0.3rem;
+  border-radius : 50%;
+  font-size : 0.875rem;
+}
+
+.team .profile .name {
+  font-size : 1.125rem;
+  font-weight : 700;
+  color : #FFFFFF;
+}
+
+.team .profile .role {
+  font-size : 0.875rem;
+  color : #FFFFFF;
+}
+
+.team .profile img {
+  height : 40px;
+  left : -10px;
+  position : relative;
+}
+
+.team .profile .social-profile a {
+  text-decoration : none;
+  font-size : 1.125rem;
+  color : #FFFFFF !important;
+}
+.font-medium {
+  font-size : 1.125rem;
+  padding-right: 7px;
+}
+.grey-accent2 {
+  color : #FFFFFF !important;
+}
+.profile{
+padding-left: 20px;
+}
+.team-tab{
+    margin-left: auto;
+    margin-right:auto;
+    width: 90%;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+.tablinks{
+    background-color: transparent;
+    color: rgb(219, 118, 219);
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid rgb(219, 118, 219);
+    border-radius: 10px;
+    margin: 10px 50px;
+}
+.tablinks:hover{
+    background-color: rgb(224, 28, 224);
+    border: 1px solid rgb(224, 28, 224);
+    color: rgb(255, 255, 255);
+
+}
+.team-active{
+    background-color: rgb(224, 28, 224);
+    border: 1px solid rgb(224, 28, 224);
+    color: rgb(255, 255, 255);
+}
+.tabcontent {
+   display: none; 
+}
+@media screen and (max-width:500px) {
+  
+    .tablinks{
+    padding: 10px 20px;
+    border: 1px solid rgb(219, 118, 219);
+    border-radius: 10px;
+    margin: 10px;
+}
+.team-tab{
+    width: 98%;
+    padding: 10px 10px;
+}
+}
+button {
+  outline: none !important;
+}
