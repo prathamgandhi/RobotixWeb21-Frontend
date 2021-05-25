@@ -1,45 +1,13 @@
 import api from "../service";
 import React, { Fragment, useState } from "react";
 
-import {contactStatus, warning} from "./contactus.js";
-import "../assets/css/contactus.css"
+import {contactStatus, warning, validate} from "../assets/js/contactus.js";
+
 
 function Contact() {
     const [info, setInfo] = useState({});
     const [validation, setValidation] = useState({email:false, name:false, message:false});
 
-    
-    const validate = (e) => {
-       
-        let newValidate= validation;
-
-        for (const key in info) {
-            
-            if (key.toString() === "email") {
-
-                const regexp = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-                let valid = regexp.test(info[key]);
-                console.log(`Inside`, key, valid);
-                newValidate[key]=valid
-               
-            }
-            else {
- 
-                const regexp = /^[A-Za-z0-9_]{5,25}$/;
-                let valid = regexp.test(info[key]);
-                console.log(`Inside`, key, valid)
-                newValidate[key]=valid
-                
-               
-            }
-            
-        }
-        setValidation(newValidate);
-  
-        warning(validation);
-  
-
-    }
 
     const handleInput = (e) => {
         let key = e.target.id;
@@ -47,14 +15,13 @@ function Contact() {
 
         setInfo({ ...info, [key]: value });
 
-
     }
 
     const handleSubmit =(e) => {
         e.preventDefault();
    
 
-        validate();
+        validate(info,validation,setValidation);
 
             if (validation.email && validation.name && validation.message) {
                 console.log('inside submit')
@@ -75,6 +42,10 @@ function Contact() {
                         contactStatus(false);
                     })
 
+        }
+
+        else{
+            warning(validation);
         }
       
         
