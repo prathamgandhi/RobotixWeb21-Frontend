@@ -36,6 +36,7 @@ useEffect(() => {
               data-background="./assets/images/coming-soon.jpg"
             >
               <div className="container">
+            <img src = "./assets/images/robotixLogo.png" style={{height: "200px", width:"500px"}} alt = "logo"></img>
                 <div className="coming-wrapper">
                   <h1 className="title">COMING SOON</h1>
                   <ul className="countdown">
