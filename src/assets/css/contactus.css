@@ -1,0 +1,30 @@
+
+.msg-status{
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+
+.msg-success{
+    color: rgb(87, 196, 87) !important;
+    
+}
+
+.msg-failure{
+    color:  #ff8a00 !important;
+  
+}
+
+.warning-msg{
+    margin-top: 3px;
+    display: none;
+    font-size: 0.9rem;
+    
+    color: #ff8a00;
+    font-family: 'Sans';
+    text-align: right;
+    padding: 0 15px;
+    word-spacing: 3px;
+   
+}
+
+
