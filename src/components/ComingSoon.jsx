@@ -3,7 +3,7 @@ import React, {Fragment, useEffect, useState } from 'react';
 
 const calculateTimeLeft = () => {
   //let year = new Date().getFullYear();
-  let difference = +new Date(2021, 4, 25) - +new Date();
+  let difference = +new Date(2021, 4, 31) - +new Date();
   let timeLeft = {};
 
   if (difference > 0) {
