@@ -65,7 +65,14 @@ export const Team = () => {
 
                         {Object.keys(teamData.teams).map((teamHeader, index) => {
 
-                            
+                            if(index===0){
+                                
+                                return (
+
+                                    <button id="default-team-tab" className="tablinks" onClick={() => { changeDomain(teamHeader, index) }} >{teamHeader}</button>
+                                )
+
+                            }
 
                             return (
 

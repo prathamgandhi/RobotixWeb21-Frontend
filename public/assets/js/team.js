@@ -1,7 +1,7 @@
 
 
 window.onload = function () {
-  document.getElementById("core-members").style.display = "block";
+  document.getElementById("Convenor").style.display = "block";
   document.getElementById("default-team-tab").className += " team-active";
 };
 
