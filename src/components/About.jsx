@@ -9,7 +9,7 @@ const About = () => {
         <div className="container">
             <div className="row align-items-center">
                 <div className="col-xl-5">
-                    <div className="about-thumb rtl pr-xl-15">
+                    <div className="about-thumb rtl pr-xl-15" >
                         <img src="./assets/images/about/about.png" alt="about" />
                     </div>
                 </div>
