@@ -2,7 +2,7 @@
 import React, { Fragment, useEffect} from "react";
 import { useSelector, useDispatch } from "react-redux";
 import api from "../service";
-import { teamAction } from "../store/actions/teamAction"
+import { teamAction } from "../store/actions/teamAction";
 
 
 
@@ -28,14 +28,21 @@ export const Team = () => {
                     }
 
                     dispatch(teamAction({ teams: newTeam, loading: false }));
-                 
+                    window.activateTeam();
 
                 })
                 .catch(error => {
 
                 })
+            }
 
-        }
+            if(teamData.loading===false){
+
+                window.activateTeam();
+
+
+            }
+            
 
     }, [])
 

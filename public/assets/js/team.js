@@ -1,6 +1,6 @@
 
 
-window.onload = function () {
+function activateTeam() {
   document.getElementById("Convenor").style.display = "block";
   document.getElementById("default-team-tab").className += " team-active";
 };
