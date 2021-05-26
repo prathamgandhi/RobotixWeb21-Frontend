@@ -6,7 +6,7 @@
 
 .msg-success{
     color: rgb(87, 196, 87) !important;
-    
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .msg-failure{
@@ -18,9 +18,9 @@
     margin-top: 3px;
     display: none;
     font-size: 0.9rem;
-    
+    font-family: "Josefin Sans", sans-serif;
     color: #ff8a00;
-    font-family: 'Sans';
+    
     text-align: right;
     padding: 0 15px;
     word-spacing: 3px;

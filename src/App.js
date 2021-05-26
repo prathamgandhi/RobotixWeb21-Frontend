@@ -88,12 +88,12 @@ function App() {
           <Main />
           <About />
           <Pricing />
-          <History />
-          <Pricing2 />
+  
+          <Pricing2 /> 
           <Team />
           <Contact />
-          <Signin/>
           <Footer />
+           <Signin/> 
 
         </Route>
 
