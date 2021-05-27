@@ -1,19 +1,9 @@
-import React, {Fragment, useEffect} from "react";
-import api from "../service"
+import React, {Fragment} from "react";
+
 
 function Main(){
 
-    useEffect(() => {
-
-        api.get("/extras/sponsors/").then(response=>{
-            console.log(`response`, response)
-
-        }).catch(error=>{
-            console.log(`error`, error)
-
-        })
-       
-    }, [])
+  
    return (
   <Fragment>
       <div className="preloader">
@@ -78,7 +68,7 @@ function Main(){
                 <div className="item">
                     <img src="./assets/images/banner/banner16/01.png" alt="banner"/>
                 </div>
-                {/* <div className="item">
+                <div className="item">
                     <img src="./assets/images/banner/banner16/02.png" alt="banner"/>
                 </div>
                 <div className="item">
@@ -92,7 +82,7 @@ function Main(){
                 </div>
                 <div className="item">
                     <img src="./assets/images/banner/banner16/06.png" alt="banner"/>
-                </div> */}
+                </div>
             </div>
         </div>
     </section>
