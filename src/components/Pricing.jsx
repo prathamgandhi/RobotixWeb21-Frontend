@@ -21,7 +21,7 @@ const Pricing = () => {
             data-paroller-type="foreground"
             data-paroller-direction="horizontal"
           >
-            <img src="./assets/images/balls/1.png" alt="balls" />
+            <img src="./assets/images/arduinoLogo.png" alt="balls" style={{height:"200px"}} />
           </div>
           <div
             className="ball-3"
@@ -30,7 +30,7 @@ const Pricing = () => {
             data-paroller-type="foreground"
             data-paroller-direction="horizontal"
           >
-            <img src="./assets/images/balls/2.png" alt="balls" />
+            <img src="./assets/images/pi.png" alt="balls" style={{height:"200px"}}/>
           </div>
           <div
             className="ball-4"
@@ -39,7 +39,7 @@ const Pricing = () => {
             data-paroller-type="foreground"
             data-paroller-direction="horizontal"
           >
-            <img src="./assets/images/balls/3.png" alt="balls" />
+            <img src="./assets/images/arduinoLogo.png" alt="balls" style={{height:"200px"}}/>
           </div>
           <div
             className="ball-5"
@@ -48,7 +48,7 @@ const Pricing = () => {
             data-paroller-type="foreground"
             data-paroller-direction="vertical"
           >
-            <img src="./assets/images/balls/4.png" alt="balls" />
+            <img src="./assets/images/favicon.png" alt="balls" style={{height:"300px"}}/>
           </div>
           <div
             className="ball-6"
@@ -57,7 +57,7 @@ const Pricing = () => {
             data-paroller-type="foreground"
             data-paroller-direction="horizontal"
           >
-            <img src="./assets/images/balls/5.png" alt="balls" />
+            <img src="./assets/images/pi.png" alt="balls" style={{height:"200px"}}  />
           </div>
           <div
             className="ball-7"
@@ -66,7 +66,7 @@ const Pricing = () => {
             data-paroller-type="foreground"
             data-paroller-direction="vertical"
           >
-            <img src="./assets/images/balls/6.png" alt="balls" />
+            {/* <img src="./assets/images/favicon.png" alt="balls" /> */}
           </div>
           <div className="container">
             <div className="section-header pb-30 cl-white">
