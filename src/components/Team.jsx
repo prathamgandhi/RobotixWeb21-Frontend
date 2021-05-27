@@ -51,7 +51,7 @@ export const Team = () => {
     return (
         <Fragment>
 
-
+        
             <div className="section-header">
                 <h5 className="cate">Meet our most valued</h5>
                 <h2 className="title">Expert Team Members</h2>
@@ -67,7 +67,7 @@ export const Team = () => {
 
 
                     <div className="team-tab">
-
+                  
                         {Object.keys(teamData.teams).map((teamHeader, index) => {
 
                             if(index===0){

@@ -10,7 +10,7 @@ const About = () => {
             <div className="row align-items-center">
                 <div className="col-xl-5">
                     <div className="about-thumb rtl pr-xl-15" >
-                        <img src="./assets/images/about/about.png" alt="about" />
+                        <img src="./assets/images/arduino.png" alt="about" />
                     </div>
                 </div>
                 <div className="col-xl-7 pl-xl-0">
