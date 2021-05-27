@@ -2,7 +2,7 @@
 import React, { Fragment, useEffect} from "react";
 import { useSelector, useDispatch } from "react-redux";
 import api from "../service";
-import { teamAction } from "../store/actions/teamAction";
+import { teamAction } from "../store/actions/actions.js";
 
 
 
@@ -16,7 +16,6 @@ export const Team = () => {
 
             api.get("/about/team/")
                 .then(response => {
-                    console.log(response.data);
                     let newTeam = response.data;
 
                     for (const key in newTeam) {
@@ -51,7 +50,6 @@ export const Team = () => {
     };
     return (
         <Fragment>
-            {console.log("team", teamData.teams)}
 
 
             <div className="section-header">

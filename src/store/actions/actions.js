@@ -6,3 +6,4 @@ export const teamAction = (data) => {
         payload : data,
     }
 }
+
