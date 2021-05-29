@@ -6,7 +6,7 @@ import rootReducer from './reducers/rootReducer.js';
 const persistConfig = {
     key: "root",
     storage:sessionStorage,
-    whitelist: ["teamReducer"]
+    whitelist: ["teamReducer","docsReducer"]
 };
 
 const pReducer = persistReducer(persistConfig, rootReducer);

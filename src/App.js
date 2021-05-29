@@ -13,6 +13,8 @@ import Contact from "./components/Contact"
 import Footer from "./components/Footer";
 import Signin from "./components/Signin.jsx";
 import Recruit from "./components/Recruit.jsx";
+import Docs from "./components/Docs.jsx";
+
 
 
 
@@ -92,6 +94,7 @@ function App() {
           <Pricing2 /> 
           <Team />
           <Contact />
+          <Docs/>
           <Footer />
            <Signin/> 
 
