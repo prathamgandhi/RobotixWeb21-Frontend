@@ -179,3 +179,19 @@ padding-left: 20px;
 button {
   outline: none !important;
 }
+.robotext{
+    display:grid;
+    grid-template-columns: 20vw 80vw;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:1110px){
+  .robotext{
+    grid-template-columns: 40vw 60vw;
+  }
+}
+@media screen and (max-width:770px){
+  .robotext{
+    grid-template-columns: none;
+  }
+}

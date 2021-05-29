@@ -52,23 +52,26 @@ export const Team = () => {
     return (
         <Fragment>
             {console.log("team", teamData.teams)}
-
+            <div className="robotext">
+            <div className="Roboimg" style={{width:'20%',paddingBottom:'20px'}}>
+                <img alt="RobotImg" src="/assets/images/robot2.png"/>
+            </div>
         
-            <div className="section-header">
+            <div className="section-header" style={{width:'70%',margin:'0px auto',wordWrap:'break-word'}}>
                 <h5 className="cate">Meet our most valued</h5>
                 <h2 className="title">Expert Team Members</h2>
                 <p>
-                    Our team of creative programmers,marketing experts, and members .we are to be doing what we love.
+                Our team of creative programmers,marketing experts, and members .we are to be doing what we love.
             </p>
             </div>
-
+            </div>
 
             {teamData.loading ? <div>loading...</div> :
 
                 <Fragment>
 
 
-                    <div className="team-tab">
+                    <div className="team-tab" style={{clear:'left'}}>
                   
                         {Object.keys(teamData.teams).map((teamHeader, index) => {
 
