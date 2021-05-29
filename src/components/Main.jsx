@@ -68,21 +68,26 @@ function Main() {
                         <div className="item">
                             <img src="./assets/images/sponsor/devfolio.png" alt="banner" />
                         </div>
+                        
+                        <div className="item">
+                            <img src="./assets/images/sponsor/Hilers.png" alt="banner" />
+                        </div>
+                        <div className="item" style={{padding:"0px"}}>
+                            <img src="./assets/images/sponsor/GlobalShala.png" alt="banner" style={{height:"50px"}}/>
+                        </div>
+                        <div className="item">
+                            <img src="./assets/images/sponsor/Rapido.png" alt="banner" />
+                        </div>
+                        
                         <div className="item">
                             <img src="./assets/images/sponsor/Fitness.png" alt="banner" />
                         </div>
                         <div className="item">
                             <img src="./assets/images/sponsor/Mahalaxmi.png" alt="banner" />
                         </div>
-                        <div className="item">
-                            <img src="./assets/images/sponsor/GlobalShala.png" alt="banner" />
-                        </div>
-                        <div className="item">
-                            <img src="./assets/images/sponsor/Hilers.png" alt="banner" />
-                        </div>
-                        <div className="item">
-                            <img src="./assets/images/sponsor/Rapido.png" alt="banner" />
-                        </div>
+                        
+                        
+                        
                         <div className="item">
                             <img src="./assets/images/sponsor/NareshMarketing.png" alt="banner" />
                         </div>

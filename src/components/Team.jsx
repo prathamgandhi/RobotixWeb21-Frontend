@@ -1,5 +1,5 @@
 
-import React, { Fragment, useEffect} from "react";
+import React, { Fragment, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import api from "../service";
 import { teamAction } from "../store/actions/actions.js";
@@ -7,7 +7,7 @@ import { teamAction } from "../store/actions/actions.js";
 
 
 export const Team = () => {
-   
+
     let teamData = useSelector(state => state.teamReducer)
     const dispatch = useDispatch();
 
@@ -33,15 +33,15 @@ export const Team = () => {
                 .catch(error => {
 
                 })
-            }
+        }
 
-            if(teamData.loading===false){
+        if (teamData.loading === false) {
 
-                window.activateTeam();
+            window.activateTeam();
 
 
-            }
-            
+        }
+
 
     }, [])
 
@@ -51,7 +51,7 @@ export const Team = () => {
     return (
         <Fragment>
 
-        
+
             <div className="section-header">
                 <h5 className="cate">Meet our most valued</h5>
                 <h2 className="title">Expert Team Members</h2>
@@ -61,17 +61,19 @@ export const Team = () => {
             </div>
 
 
-            {teamData.loading ? <div>loading...</div> :
+            {teamData.loading ? <div class="d-flex justify-content-center"><div class="spinner-border text-secondary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div></div> :
 
                 <Fragment>
 
 
                     <div className="team-tab">
-                  
+
                         {Object.keys(teamData.teams).map((teamHeader, index) => {
 
-                            if(index===0){
-                                
+                            if (index === 0) {
+
                                 return (
 
                                     <button id="default-team-tab" key={index} className="tablinks" onClick={() => { changeDomain(teamHeader, index) }} >{teamHeader}</button>

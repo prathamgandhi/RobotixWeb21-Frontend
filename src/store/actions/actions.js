@@ -7,3 +7,10 @@ export const teamAction = (data) => {
     }
 }
 
+export const docsAction = (data) => {
+    return {
+        type: "UPDATE_DOCS",
+        payload : data,
+    }
+}
+

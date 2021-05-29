@@ -197,9 +197,9 @@ button {
   width:50%;
 }
 .marquee-wrapper .marquee-block{
-  --total-marquee-items:5;
+  /* --total-marquee-items:7; */
   height: 450px;
-  width: calc(250px * (var(--total-marquee-items)));
+  /* width: calc(250px * (var(--total-marquee-items))); */
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
@@ -273,3 +273,24 @@ padding: 7px;
    left: 0; 
   }
 }
+
+
+/* SPONSORS SECTION */
+
+
+.owl-item{
+  display: flex !important;
+  align-items: center;
+
+}
+.owl-stage{
+  display: flex !important;
+
+} 
+
+.item{
+  padding:0 20px;
+}
+
+
+
