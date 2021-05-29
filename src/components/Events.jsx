@@ -1,6 +1,17 @@
-import {Fragment} from 'react'
+import {Fragment, useEffect, useState} from 'react'
+import api from "../service"
+const Events = () => {
+  const[events, setEvents] = useState([]);
+  useEffect(() => {
+    
+    api.get("/events/")
+    .then(res => {
+      console.log(res.data.Event);
+    setEvents(res.data.Event);
+    })
+    .catch(err => console.log(err));
+  }, []);
 
-const Pricing = () => {
     return (
       <Fragment>
         <section
@@ -85,24 +96,16 @@ const Pricing = () => {
                    <div className="tags-area">
                                 <h3 className="tags">Schedule</h3>
                             </div>
-                            { /*
-                            <div className="amount-area">
-                                <div className="item">
-                                    <h2 className="title"><sup>$</sup>15.00</h2>
-                                    <span className="info">Per Month</span>
-                                </div>
-                                <div className="item">
-                                    <h2 className="title"><sup>$</sup>199.00</h2>
-                                    <span className="info">Per Year</span>
-                                </div>
-                            </div>
-                            <div className="invest-range-area">
-                                <div className="invest-amount" data-min="1.00 USD" data-max="1000 USD">
-                                    <div id="usd-range" className="invest-range-slider"></div>
-                                </div>
-                            </div> 
-                    </div>  */}
+                        
+                 
+                 {/* **********************************CARAOUSEL STARTS************************ */}
                   <div className="history-slider owl-theme owl-carousel">
+                    
+                    
+                 {events.map((eventItem, index) => {
+
+
+              return(
                     <div className="history-item">
                       <div className="history-content">
                         <div className="content">
@@ -118,7 +121,21 @@ const Pricing = () => {
                         <span>2014</span>
                       </div>
                     </div>
-                    <div className="history-item">
+              
+              )
+               })   
+                 }  
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                     {/* ********************** ORIGINAL CODE ********************* */}
+                    {/* <div className="history-item">
                       <div className="history-content">
                         <div className="content">
                           <h6 className="title">We Are Growing</h6>
@@ -192,127 +209,8 @@ const Pricing = () => {
                         <div className="anime-item-2"></div>
                         <span>2019</span>
                       </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2021</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2014</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2015</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2016</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2017</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2018</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2019</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2021</span>
-                      </div>
-                    </div>
+                    </div> */}
+                   
                   </div> 
                 </div>
                 <div className="pricing-range-bottom">
@@ -537,4 +435,4 @@ const Pricing = () => {
     );
 }
 
-export default Pricing
+export default Events

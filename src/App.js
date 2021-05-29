@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import api from "./service"
 import Main from "./components/Main.jsx"
 import About from "./components/About.jsx"
-import Pricing from "./components/Pricing.jsx"
+import Events from "./components/Events.jsx"
 import History from "./components/History.jsx"
 import Pricing2 from "./components/Pricing2"
 import Team from "./components/Team";
@@ -89,7 +89,7 @@ function App() {
         <Route path="/">
           <Main />
           <About />
-          <Pricing />
+          <Events />
   
           <Pricing2 /> 
           <Team />
