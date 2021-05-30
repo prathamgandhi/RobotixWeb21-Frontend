@@ -5,7 +5,7 @@ import Reveal from "react-reveal/Reveal";
 const About = () => {
     return (
     <Fragment>
-        <section className="about-section padding-top padding-bottom oh" href="#1">
+        <section id="about-section" className="about-section padding-top padding-bottom oh" href="#1">
         <div className="container">
             <div className="row align-items-center">
                 <div className="col-xl-5">

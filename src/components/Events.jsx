@@ -17,7 +17,7 @@ const Events = () => {
         <section
           className="pricing-section padding-top oh padding-bottom pb-md-0 bg_img pos-rel"
           data-background="./assets/images/bg/pricing-bg.jpg"
-          id="pricing"
+          id="events-section"
         >
           <div className="top-shape d-none d-md-block">
             <img src="./assets/css/img/top-shape.png" alt="css" />

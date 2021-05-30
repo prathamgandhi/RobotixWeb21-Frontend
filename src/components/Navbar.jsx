@@ -2,11 +2,17 @@ import React, {Fragment} from "react";
 
 
 function Navbar(){
-    
-    
+
+    const scroll=(e)=>{
+   
+        document.getElementById(`${e.target.name}`).scrollIntoView({behavior:"smooth"})
+
+    }
+
+ 
 return(
   <Fragment>
-   <header class="header-section">
+   <header class="header-section navbar">
         <div class="container">
             <div class="header-wrapper">
                 <div class="logo">
@@ -16,24 +22,24 @@ return(
                 </div>
                 <ul class="menu">
                     <li>
-                        <a href="#">Home</a>
+                    <button name="main-section" className="navbtn" onClick={scroll}>Home</button>
                        
                     </li>
                     <li>
-                        <a href="#1">About Us</a>
+                    <button name="about-section" className="navbtn" onClick={scroll}>About</button>
                     
                     </li>
                    
                     <li>
-                        <a href="#0">Events</a>
+                    <button name="events-section" className="navbtn" onClick={scroll}>Events</button>
                         
                     </li>
                     <li>
-                        <a href="#0">Team</a>
+                    <button name="team-section" className="navbtn" onClick={scroll}>Team</button>
                         
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <button name="contact-section" className="navbtn" onClick={scroll}>Contact</button>
                     </li>
                    
                 </ul>

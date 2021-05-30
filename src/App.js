@@ -15,7 +15,6 @@ import Signin from "./components/Signin.jsx";
 import Recruit from "./components/Recruit.jsx";
 import Docs from "./components/Docs.jsx";
 import config from "react-reveal/globals";
-import Navbar from "./components/Navbar.jsx";
 
 config({ ssrFadeout: true });
 
@@ -91,7 +90,6 @@ function App() {
 
 
         <Route path="/">
-          <Navbar/>
           <Main />
           <About />
           <Events />

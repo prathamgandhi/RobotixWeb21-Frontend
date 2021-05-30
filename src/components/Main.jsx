@@ -22,7 +22,7 @@ function Main() {
         </a>
         <div className="overlay"></div>
 
-        <section
+        <section id="main-section"
           className="banner-1 bg_img oh"
           data-background="./assets/images/banner/banner-bg-1.jpg"
         >

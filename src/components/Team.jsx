@@ -51,12 +51,12 @@ export const Team = () => {
     return (
         <Fragment>
             {console.log("team", teamData.teams)}
-            <div className="robotext">
+            <div id="team-section" className="robotext">
             <div className="Roboimg" style={{width:'20%',paddingBottom:'20px'}}>
                 <img alt="RobotImg" src="/assets/images/robot2.png"/>
             </div>
         
-            <div className="section-header" style={{width:'70%',margin:'0px auto',wordWrap:'break-word'}}>
+            <div  className="section-header" style={{width:'70%',margin:'0px auto',wordWrap:'break-word'}}>
                     <h5 className="cate">Meet our most valued</h5>
                     <h2 className="title">Expert Team Members</h2>
                     <p>
