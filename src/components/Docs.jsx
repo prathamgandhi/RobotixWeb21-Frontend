@@ -8,9 +8,9 @@ function Docs() {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        api.get("/extras/diy/").then(response => {
+        api.get("/extras/docs/").then(response => {
             console.log(response.data);
-            let docs = response.data;
+            let docs = response.data.DIY;
             dispatch(docsAction({ loading: false, docs }));
         }).catch(error => {
             console.log(error)
@@ -38,10 +38,10 @@ function Docs() {
                                                 return (
 
                                                     <div className="marquee-item">
-                                                        <img src={doc.photo} alt="..." />
+                                                        {/* <img src="" alt="..." />                                                        */}
                                                         <div className="documenttitle">{doc.title}</div>
                                                         <div style={{ fontSize: ".8rem" }}>Mentor: {doc.mentor}</div>
-                                                        <div style={{ fontSize: ".8rem" }}>Members: {doc.members}</div>
+                                                        {/* <div style={{ fontSize: ".8rem" }}>Members: {doc.members}</div> */}
                                                         <div className="downloadbtn"><a href={doc.file} download={doc.title}><i class="fa fa-download"></i></a></div>
                                                     </div>
 
@@ -61,8 +61,11 @@ function Docs() {
                                                 return (
 
                                                     <div className="marquee-item">
-                                                        <img src={doc.photo} alt="..." />
-                                                        <div className="documenttitle">{doc.title}</div>
+                                                        {/* <img src="" alt="..." /> */}
+
+                                                        <div className="documenttitle">{doc.title}
+                                                        </div>
+                                                        <div style={{ fontSize: ".8rem" }}>Mentor: {doc.mentor}</div>
                                                         <div className="downloadbtn"><a href={doc.file} download={doc.title}><i class="fa fa-download"></i></a></div>
                                                     </div>
 
