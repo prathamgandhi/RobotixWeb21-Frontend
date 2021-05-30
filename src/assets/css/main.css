@@ -3208,6 +3208,7 @@ input[type="submit"] {
     font-size: 70px;
     line-height: 86px;
     margin-bottom: 15px;
+    text-align:center;
 }
 
 .banner-content-1 p {
@@ -3233,6 +3234,7 @@ input[type="submit"] {
         font-size: 20px;
         line-height: 30px;
         margin-bottom: 35px;
+        text-align:center;
     }
 }
 
@@ -3247,6 +3249,7 @@ input[type="submit"] {
         font-size: 18px;
         line-height: 30px;
         margin-bottom: 25px;
+        text-align:center;
     }
 
     .banner-content-1 .banner-button-group .button-4 {
@@ -11624,7 +11627,7 @@ div[class*="col"]:nth-of-type(3n + 2) .pricing-item-4 .pricing-header::before {
     }
 
     .about-thumb img {
-        width: 100%;
+        width: 140%;
     }
 }
 
