@@ -5,7 +5,7 @@ import {Fragment} from "react";
 const About = () => {
     return (
     <Fragment>
-        <section className="about-section padding-top padding-bottom oh">
+        <section className="about-section padding-top padding-bottom oh" href="#1">
         <div className="container">
             <div className="row align-items-center">
                 <div className="col-xl-5">

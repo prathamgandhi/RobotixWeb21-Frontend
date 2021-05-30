@@ -2408,12 +2408,13 @@ input[type="submit"] {
     width: 100%;
     position: fixed;
     z-index: 999;
-    top: 10px;
+    top:5px;
     -webkit-transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
     transition: all ease 0.3s;
-    padding: 15px 0;
+    padding: 5px 0;
     color: #3b368c;
+    font-family: "Josefin Sans", sans serif;
 }
 
 .header-section .header-wrapper {
@@ -2552,7 +2553,8 @@ input[type="submit"] {
         width: 100%;
         max-height: calc(100vh - 130px);
         z-index: 9;
-        background-color: #3b368c;
+        background-color: #3a368c00;
+        text-align:center;
         overflow-y: auto;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
         -webkit-transition: all ease 0.3s;
@@ -2662,13 +2664,14 @@ input[type="submit"] {
 }
 
 .header-section.active {
-    background: #3b319e;
+    background: #3d30b600;
     top: 0;
+    opacity:0.8;
 }
 
 @media (max-width: 991px) {
     .header-section.active {
-        background: #3b319e;
+        background: #6b62b800;
     }
 }
 
@@ -2790,12 +2793,7 @@ input[type="submit"] {
     }
 }
 
-.menu-item-has-children > a::after {
-    content: "\f107";
-    font-weight: 600;
-    font-family: "Font Awesome 5 Free";
-    margin-left: 5px;
-}
+
 
 /*Header Bar Starts*/
 .header-bar {
@@ -3207,7 +3205,7 @@ input[type="submit"] {
 }
 
 .banner-content-1 .title {
-    font-size: 76px;
+    font-size: 70px;
     line-height: 86px;
     margin-bottom: 15px;
 }
@@ -3271,13 +3269,13 @@ input[type="submit"] {
 }
 
 .banner-1 {
-    padding: 185px 0 80px;
+    padding: 85px 0 80px;
     position: relative;
 }
 
 @media (min-width: 992px) {
     .banner-1 {
-        padding: 225px 0 165px;
+        padding: 85px 0 165px;
     }
 }
 
@@ -17693,4 +17691,35 @@ div[class*="col"]:nth-of-type(3n + 3) .pricing-item-20 {
 
 .section--bg {
     background: #31377d;
+}
+
+
+/* X CSS */
+.X {
+    animation: flicker 3s linear infinite;
+}
+
+@keyframes flicker {
+
+    0%,
+    19.999%,
+    22%,
+    62.999%,
+    64%,
+    64.999%,
+    70%,
+    100% {
+        opacity: 0.99;
+        text-shadow: -1px -1px 0 rgba(255, 255, 255, .4), 1px -1px 0 rgba(255, 255, 255, .4), -1px 1px 0 rgba(255, 255, 255, .4), 1px 1px 0 rgba(255, 255, 255, .4), 0 -2px 8px, 0 0 2px, 0 0 5px #ff00f2, 0 0 15px #f44, 0 0 2px #ff00f2, 0 2px 3px #000;
+    }
+
+    20%,
+    21.999%,
+    63%,
+    63.999%,
+    65%,
+    69.999% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
 }

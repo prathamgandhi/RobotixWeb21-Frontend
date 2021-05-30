@@ -1,11 +1,12 @@
 import React, { Fragment } from "react";
-
+import Navbar from "./Navbar";
 
 function Main() {
 
 
     return (
         <Fragment>
+        <Navbar/>
             <div className="preloader">
                 <div className="preloader-inner">
                     <div className="preloader-icon">
@@ -37,19 +38,25 @@ function Main() {
                 <div className="banner-1-shape d-none d-lg-block">
                     <img src="./assets/css/img/banner1-shape.png" alt="css" />
                 </div>
+                <br/>
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="banner-content-1 cl-white">
-                                <h1 className="title">Robotix Club</h1>
+                              <br /><br/><br/><br/>
+                                <h1 className="title">ROBOTI<span className="X" >X</span> CLUB</h1>
+                                <br/>
                                 <p className="strong">
                                     NATIONAL INSTITUTE OF TECHNOLOGY,RAIPUR
                         </p>
-                                <p>We, Robotix Club of NIT Raipur, constitute enthusiasts and experts in the field of robotics who deal with the application of robotics in real life situations....</p>
+                                  <br/>
+                                 {/* <p>We, Robotix Club of NIT Raipur, constitute enthusiasts and experts in the field of robotics who deal with the application of robotics in real life situations....</p> */}
                             </div>
                         </div>
+                      <img src="./assets/images/mainRobot.png"   / >
 
                     </div>
+
                 </div>
             </section>
 
