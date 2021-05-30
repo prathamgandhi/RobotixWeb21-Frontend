@@ -102,10 +102,7 @@ const Events = () => {
                   <div className="history-slider owl-theme owl-carousel">
                     
                     
-                 {events.map((eventItem, index) => {
-
-
-              return(
+               
                     <div className="history-item">
                       <div className="history-content">
                         <div className="content">
@@ -121,21 +118,7 @@ const Events = () => {
                         <span>2014</span>
                       </div>
                     </div>
-              
-              )
-               })   
-                 }  
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                     {/* ********************** ORIGINAL CODE ********************* */}
-                    {/* <div className="history-item">
+             <div className="history-item">
                       <div className="history-content">
                         <div className="content">
                           <h6 className="title">We Are Growing</h6>
@@ -209,7 +192,7 @@ const Events = () => {
                         <div className="anime-item-2"></div>
                         <span>2019</span>
                       </div>
-                    </div> */}
+                    </div>
                    
                   </div> 
                 </div>
