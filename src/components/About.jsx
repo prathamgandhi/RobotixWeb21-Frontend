@@ -1,11 +1,11 @@
 import {Fragment} from "react";
-
+import Reveal from "react-reveal/Reveal";
 
 
 const About = () => {
     return (
     <Fragment>
-        <section className="about-section padding-top padding-bottom oh" href="#1">
+        <section id="about-section" className="about-section padding-top padding-bottom oh" href="#1">
         <div className="container">
             <div className="row align-items-center">
                 <div className="col-xl-5">
@@ -15,6 +15,8 @@ const About = () => {
                 </div>
                 <div className="col-xl-7 pl-xl-0">
                     <div className="about-content">
+                    <Reveal effect = "fadeInUp" duration="2000">
+
                         <div className="section-header left-style">
                             <h5 className="cate">A Few Words About Us</h5>
                             <h2 className="title">Who are we ??</h2>
@@ -23,6 +25,7 @@ const About = () => {
                             <h2 className="title">Our Vision</h2>
                             <p>Robotix Club NITRR strives to develop technological skills in the diverse field of mechatronics and robotics by transcending the theoretical knowledge into live application and providing live simple yet creative solution for real world complex problems. The club's focus has always been on student specific events and workshops to increase the reach of robotics in the college. Major part of the club has been involved with students as well as teachers working together as a cohesive unit.</p>
                         </div>
+                    </Reveal>
                         <div className="counter-area-5">
                             <div className="counter-item-5">
                                 <div className="counter-thumb">

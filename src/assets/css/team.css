@@ -308,5 +308,32 @@ padding: 7px;
   padding:0 20px;
 }
 
+/* NAVBAR */
 
+
+.header-wrapper{
+  width: 100%;
+  display: flex !important;
+  justify-content: space-between;
+}
+.navbtn{
+  background: transparent;
+  color:white;
+  height: 42px;
+  border:unset;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 7px 10px;
+  display: inline-block;
+    transition: all ease 0.3s;
+}
+
+.overlay.active {
+  opacity: 1;
+  backdrop-filter: blur(2px);
+  visibility: visible;
+  z-index: 100;
+
+}
 

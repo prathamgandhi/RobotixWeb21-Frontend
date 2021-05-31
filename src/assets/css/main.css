@@ -3208,6 +3208,7 @@ input[type="submit"] {
     font-size: 70px;
     line-height: 86px;
     margin-bottom: 15px;
+    text-align:center;
 }
 
 .banner-content-1 p {
@@ -3233,6 +3234,7 @@ input[type="submit"] {
         font-size: 20px;
         line-height: 30px;
         margin-bottom: 35px;
+        text-align:center;
     }
 }
 
@@ -3247,6 +3249,7 @@ input[type="submit"] {
         font-size: 18px;
         line-height: 30px;
         margin-bottom: 25px;
+        text-align:center;
     }
 
     .banner-content-1 .banner-button-group .button-4 {
@@ -3286,7 +3289,6 @@ input[type="submit"] {
 
 
 .banner-1 .container{
-    margin: 0 50px;
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -3305,10 +3307,6 @@ input[type="submit"] {
         align-items: center;
         width:70%;
         margin: 0 auto;
-    }
-    .container .RobImage img{
-        position: relative;
-        right: 40px;
     }
 }
 
@@ -11652,7 +11650,7 @@ div[class*="col"]:nth-of-type(3n + 2) .pricing-item-4 .pricing-header::before {
     }
 
     .about-thumb img {
-        width: 100%;
+        width: 140%;
     }
 }
 
@@ -11821,6 +11819,8 @@ div[class*="col"]:nth-child(even) .team-item:hover .team-thumb::before {
 
 .history-item {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .history-item .history-content {

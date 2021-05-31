@@ -17,7 +17,7 @@ const Events = () => {
         <section
           className="pricing-section padding-top oh padding-bottom pb-md-0 bg_img pos-rel"
           data-background="./assets/images/bg/pricing-bg.jpg"
-          id="pricing"
+          id="events-section"
         >
           <div className="top-shape d-none d-md-block">
             <img src="./assets/css/img/top-shape.png" alt="css" />
@@ -118,7 +118,7 @@ const Events = () => {
                         <span>2014</span>
                       </div>
                     </div>
-             <div className="history-item">
+                   {/* <div className="history-item">
                       <div className="history-content">
                         <div className="content">
                           <h6 className="title">We Are Growing</h6>
@@ -192,7 +192,7 @@ const Events = () => {
                         <div className="anime-item-2"></div>
                         <span>2019</span>
                       </div>
-                    </div>
+                    </div> */}
                    
                   </div> 
                 </div>

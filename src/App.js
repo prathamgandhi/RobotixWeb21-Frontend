@@ -14,6 +14,9 @@ import Footer from "./components/Footer";
 import Signin from "./components/Signin.jsx";
 import Recruit from "./components/Recruit.jsx";
 import Docs from "./components/Docs.jsx";
+import config from "react-reveal/globals";
+
+config({ ssrFadeout: true });
 
 
 
