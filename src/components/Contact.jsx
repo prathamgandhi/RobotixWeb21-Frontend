@@ -1,6 +1,6 @@
 import api from "../service";
 import React, { Fragment, useState } from "react";
-
+import Reveal from "react-reveal/Reveal";
 import {contactStatus, warning, validate} from "../assets/js/contactus.js";
 
 
@@ -52,7 +52,7 @@ function Contact() {
     }
     return (
         <Fragment>
- 
+    <Reveal effect ="fadeInUp">
             <section id="contact-section" className="page-header single-header bg_img oh" data-background="./assets/images/page-header.png">
                 <div className="bottom-shape d-none d-md-block">
                     <img src="./assets/css/img/page-header.png" alt="css" />
@@ -152,6 +152,7 @@ function Contact() {
                     </div>
                 </div>
             </section>
+            </Reveal>
         </Fragment>
     );
 }

@@ -3,7 +3,7 @@ import React, { Fragment, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import api from "../service";
 import { teamAction } from "../store/actions/actions.js";
-
+import Reveal from "react-reveal/Reveal";
 
 
 export const Team = () => {
@@ -50,8 +50,12 @@ export const Team = () => {
     };
     return (
         <Fragment>
+         
             {console.log("team", teamData.teams)}
+          <Reveal effect="fadeInUp">
+
             <div id="team-section" className="robotext">
+            
             <div className="Roboimg" style={{width:'20%',paddingBottom:'20px'}}>
                 <img alt="RobotImg" src="/assets/images/robot2.png"/>
             </div>
@@ -64,6 +68,7 @@ export const Team = () => {
                 </p>
             </div>
             </div>
+          </Reveal>  
 
             {teamData.loading ? <div class="d-flex justify-content-center"><div class="spinner-border text-secondary" role="status">
                 <span class="sr-only">Loading...</span>
@@ -71,7 +76,7 @@ export const Team = () => {
 
                 <Fragment>
 
-
+                 
                     <div className="team-tab" style={{clear:'left'}}>
                   
 
@@ -158,12 +163,14 @@ export const Team = () => {
 
 
 
-
+                 
 
                 </Fragment>
 
             }
-                <section className="logo-slider-section padding-bottom-2 padding-top" style={{paddingBottom:"0px"}}>
+        
+        <Reveal effect="fadeInUp">
+         <section className="logo-slider-section padding-bottom-2 padding-top" style={{paddingBottom:"0px"}}>
              <section class="logo-slider-section section--bg padding-bottom padding-top">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -206,7 +213,7 @@ export const Team = () => {
 
 
              </section>
-
+        </Reveal>
         </Fragment>
     )
 }

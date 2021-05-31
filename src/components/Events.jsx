@@ -1,4 +1,5 @@
 import {Fragment, useEffect, useState} from 'react'
+import Reveal from "react-reveal/Reveal";
 import api from "../service"
 const Events = () => {
   const[events, setEvents] = useState([]);
@@ -79,6 +80,7 @@ const Events = () => {
           >
             {/* <img src="./assets/images/favicon.png" alt="balls" /> */}
           </div>
+        <Reveal effect ="fadeInUp" > 
           <div className="container">
             <div className="section-header pb-30 cl-white">
               <h5 className="cate">Upcoming Events</h5>
@@ -413,6 +415,8 @@ const Events = () => {
               </div>
             </div>
           </div>
+         </Reveal>
+
         </section>
       </Fragment>
     );
