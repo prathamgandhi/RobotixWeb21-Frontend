@@ -63,7 +63,7 @@ function Contact() {
                 <div className="container">
                     <div className="section-header mw-100 cl-white">
                         <h2 className="title">Contact Robotix Club</h2>
-                        <p>Whether you're looking for a demo, have a support question or a commercial query get in touch.</p>
+                        <br/>
                     </div>
                     <div className="row justify-content-center justify-content-lg-between">
                         <div className="col-lg-7">
@@ -114,8 +114,7 @@ function Contact() {
                                 </div>
                                 <div className="section-header left-style">
                                     <h3 className="title">Have questions?</h3>
-                                    <p>Have questions about payments or price
-                                plans? We have answers!</p>
+                                    <p>Have questions about the Club or events? We have answers!</p>
                                     {/* <a href="#0">Read F.A.Q <i className="fas fa-angle-right"></i></a> */}
                                 </div>
                                 <div className="contact-area">
@@ -125,17 +124,7 @@ function Contact() {
                                         </div>
                                         <div className="contact-contact">
                                             <h5 className="subtitle">Email Us</h5>
-                                            <a href="Mailto:info@mosto.com">info@mosto.com</a>
-                                        </div>
-                                    </div>
-                                    <div className="contact-item">
-                                        <div className="contact-thumb">
-                                            <img src="./assets/images/contact/contact2.png" alt="contact" />
-                                        </div>
-                                        <div className="contact-contact">
-                                            <h5 className="subtitle">Call Us</h5>
-                                            <a href="Tel:565656855">+1 (987) 664-32-11</a>
-                                            <a href="Tel:565656855">+1 (987) 664-32-11</a>
+                                            <a href="Mailto:robotixclub@nitrr.ac.in">robotixclub@nitrr.ac.in</a>
                                         </div>
                                     </div>
                                     <div className="contact-item">
@@ -144,7 +133,7 @@ function Contact() {
                                         </div>
                                         <div className="contact-contact">
                                             <h5 className="subtitle">Visit Us</h5>
-                                            <p>4293 Euclid Avenue, Los Angeles,CA 90012</p>
+                                            <p>National Institute of Technology, Raipur</p>
                                         </div>
                                     </div>
                                 </div>

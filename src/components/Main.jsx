@@ -34,10 +34,10 @@ function Main() {
             <img src="./assets/images/banner/dot-big.png" alt="banner" />
           </div>
           <div className="dot-3">
-            <img src="./assets/images/banner/dot-sm.png" alt="banner" />
+            {/* <img src="./assets/images/banner/dot-sm.png" alt="banner" /> */}
           </div>
           <div className="dot-4">
-            <img src="./assets/images/banner/dot-sm.png" alt="banner" />
+            {/* <img src="./assets/images/banner/dot-sm.png" alt="banner" /> */}
           </div>
           <div className="banner-1-shape d-none d-lg-block">
             <img src="./assets/css/img/banner1-shape.png" alt="css" />
