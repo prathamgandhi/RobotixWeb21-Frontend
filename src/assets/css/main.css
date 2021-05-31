@@ -3278,10 +3278,38 @@ input[type="submit"] {
         padding: 85px 0 165px;
     }
 }
+@media screen and (max-width:770px){
+    .banner-1 {
+        max-height: none !important;
+    }
+}
 
-.banner-1 .container {
+
+.banner-1 .container{
+    margin: 0 50px;
     position: relative;
+    display: flex;
+    justify-content: space-around;
     z-index: 99;
+}
+@media screen and (max-width:770px){
+    .banner-1 .container{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:430px){
+    .cl-white{
+        display: grid;
+        align-items: center;
+        width:70%;
+        margin: 0 auto;
+    }
+    .container .RobImage img{
+        position: relative;
+        right: 40px;
+    }
 }
 
 .dot-3, .dot-4,

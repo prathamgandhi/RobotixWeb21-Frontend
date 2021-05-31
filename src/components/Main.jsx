@@ -22,7 +22,7 @@ function Main() {
 
 
 
-            <section className="banner-1 bg_img oh" data-background="./assets/images/banner/banner-bg-1.jpg">
+            <section className="banner-1 bg_img oh" data-background="./assets/images/banner/banner-bg-1.jpg" style={{maxHeight:'700px'}}>
                 <div className="dot-1 d-none d-lg-block">
                     <img src="./assets/images/banner/dot-big.png" alt="banner" />
                 </div>
@@ -41,22 +41,22 @@ function Main() {
                 <br/>
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-6">
+                        <div className="col-lg-8">
                             <div className="banner-content-1 cl-white">
                               <br /><br/><br/><br/>
                                 <h1 className="title">ROBOTI<span className="X" >X</span> CLUB</h1>
                                 <br/>
                                 <p className="strong">
                                     NATIONAL INSTITUTE OF TECHNOLOGY,RAIPUR
-                        </p>
+                                </p>
                                   <br/>
                                  {/* <p>We, Robotix Club of NIT Raipur, constitute enthusiasts and experts in the field of robotics who deal with the application of robotics in real life situations....</p> */}
                             </div>
                         </div>
-                      <img src="./assets/images/mainRobot.png"   / >
-
                     </div>
-
+                    <div className="RobImage">
+                    <img src="./assets/images/mainRobot.png"   />
+                    </div>
                 </div>
             </section>
 
