@@ -52,12 +52,13 @@ function Contact() {
     }
     return (
         <Fragment>
-    <Reveal effect ="fadeInUp">
+    
             <section id="contact-section" className="page-header single-header bg_img oh" data-background="./assets/images/page-header.png">
                 <div className="bottom-shape d-none d-md-block">
                     <img src="./assets/css/img/page-header.png" alt="css" />
                 </div>
             </section>
+            <Reveal effect ="fadeInUp">
             <section className="contact-section padding-top padding-bottom">
                 <div className="container">
                     <div className="section-header mw-100 cl-white">

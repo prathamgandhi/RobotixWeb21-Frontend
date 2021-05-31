@@ -17,7 +17,7 @@ const About = () => {
                 </div>
                 <div className="col-xl-7 pl-xl-0">
                     <div className="about-content">
-                    <Reveal effect = "fadeInUp" duration="2000">
+                    <Fade bottom cascade duration="800" distance="100px">
 
                         <div className="section-header left-style">
                             <h5 className="cate">A Few Words About Us</h5>
@@ -27,7 +27,7 @@ const About = () => {
                             <h2 className="title">Our Vision</h2>
                             <p>Robotix Club NITRR strives to develop technological skills in the diverse field of mechatronics and robotics by transcending the theoretical knowledge into live application and providing live simple yet creative solution for real world complex problems. The club's focus has always been on student specific events and workshops to increase the reach of robotics in the college. Major part of the club has been involved with students as well as teachers working together as a cohesive unit.</p>
                         </div>
-                    </Reveal>
+                    </Fade>
                         <div className="counter-area-5">
                             <div className="counter-item-5">
                                 <div className="counter-thumb">

@@ -20,7 +20,7 @@ function Main() {
         <a href="#0" className="scrollToTop">
           <i className="fas fa-angle-up"></i>
         </a>
-        <div className="overlay"></div>
+        <div className="overlay" id="overlay"></div>
 
         <section id="main-section"
           className="banner-1 bg_img oh"

@@ -12,7 +12,7 @@ function Navbar(){
  
 return(
   <Fragment>
-   <header class="header-section navbar">
+   <header class="header-section navbar" id="navbar">
         <div class="container">
             <div class="header-wrapper">
                 <div class="logo">
@@ -50,7 +50,7 @@ return(
                 </div>
                 
             </div>
-        </div>
+        </div>      
     </header> 
  </Fragment>
  )
