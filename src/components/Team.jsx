@@ -4,8 +4,11 @@ import { useSelector, useDispatch } from "react-redux";
 import api from "../service";
 import { teamAction } from "../store/actions/actions.js";
 import Reveal from "react-reveal/Reveal";
-
-
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import InstagramIcon from "@material-ui/icons/Instagram";
+// import MailOutlineIcon from '@material-ui/icons/MailOutline';
+// import PhoneIcon from "@material-ui/icons/Phone";
 export const Team = () => {
 
     let teamData = useSelector(state => state.teamReducer)
@@ -56,15 +59,15 @@ export const Team = () => {
 
             <div id="team-section" className="robotext">
             
-            <div className="Roboimg" style={{width:'20%',paddingBottom:'20px'}}>
+            <div className="Roboimg" style={{width:'20%', paddingBottom:'20px'}}>
                 <img alt="RobotImg" src="/assets/images/robot2.png"/>
             </div>
         
             <div  className="section-header" style={{width:'70%',margin:'0px auto',wordWrap:'break-word'}}>
                     <h5 className="cate">Meet our most valued</h5>
-                    <h2 className="title">Expert Team Members</h2>
+                    <h2 className="title">Team Members</h2>
                     <p>
-                    Our team of creative programmers,marketing experts, and members .we are to be doing what we love.
+                    Our team of creative programmers, marketing experts, designers, sponsors, tech enthusiasts. We are doing what we love.
                 </p>
             </div>
             </div>
@@ -130,10 +133,10 @@ export const Team = () => {
                                                                 <div className="name">{member.name}</div>
                                                                 <div className="role">{member.branch}</div>
                                                                 <div className="social-profile mt-3">
-                                                                    <a href="/" title="Linkedin" className="font-medium grey-accent2 mr-2"> <i className="fa fa-facebook"> </i> </a>
-                                                                    <a href="/" title="Twitter" className="font-medium grey-accent2 mr-2"> <i className="fa fa-linkedin"> </i> </a>
-                                                                    <a href="/" title="Github" className="font-medium grey-accent2"> <i className="fa fa-instagram"> </i> </a>
-                                                                    <a href="/" title="Github" className="font-medium grey-accent2"> <i className="fa fa-github"> </i> </a>
+                                                                    <a href="/" title="Linkedin" className="font-medium grey-accent2 mr-2"><LinkedInIcon fontSize="medium"/> </a>
+                                                                    <a href="/" title="Facebook" className="font-medium grey-accent2 mr-2"><FacebookIcon fontSize="medium"/></a>
+                                                                    <a href="/" title="Phone" className="font-medium grey-accent2"> <InstagramIcon fontSize="medium"/></a>
+                                                                   {/* <a href="/" title="Mail" className="font-medium grey-accent2"> <MailOutlineIcon/></a> */}
                                                                 </div>
                                                             </div>
                                                         </div>

@@ -99,7 +99,7 @@ function App() {
           <Contact />
           <Docs/>
           <Footer />
-           <Signin/> 
+           {/* <Signin/>  */}
 
         </Route>
 
