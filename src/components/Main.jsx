@@ -44,8 +44,8 @@ function Main() {
           </div>
           <br />
           <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6">
+            <div className="row align-items-left">
+              <div className="col-lg-12">
                 <Reveal effect="fadeInUp">
                   <div className="banner-content-1 cl-white">
                     <br />

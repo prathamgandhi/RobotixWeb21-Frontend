@@ -3208,7 +3208,7 @@ input[type="submit"] {
     font-size: 70px;
     line-height: 86px;
     margin-bottom: 15px;
-    text-align:center;
+    /* text-align:center; */
 }
 
 .banner-content-1 p {
@@ -3299,6 +3299,9 @@ input[type="submit"] {
         display: grid;
         align-items: center;
         justify-content: center;
+    }
+    .banner-content-1 .title {
+        text-align: center;
     }
 }
 @media screen and (max-width:430px){
