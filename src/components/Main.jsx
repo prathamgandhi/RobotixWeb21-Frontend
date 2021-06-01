@@ -53,7 +53,7 @@ function Main() {
                     <br />
                     <br />
                     <h1 className="title">
-                      ROBOTI<span className="X">X</span> CLUB
+                      ROBOTI<span className="X" style={{fontSize:"75px"}}>X</span> CLUB
                     </h1>
                     <br />
                     <p style={{ fontFamily: '"Josefin Sans", san serif' }}>
