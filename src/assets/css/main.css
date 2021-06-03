@@ -17821,3 +17821,12 @@ div[class*="col"]:nth-of-type(3n + 3) .pricing-item-20 {
         background-position: top right;
     }
 }
+.custom{
+    height:300px;
+}
+
+@media (max-width:770px){
+    .custom{
+        height: 50px;
+    }
+}

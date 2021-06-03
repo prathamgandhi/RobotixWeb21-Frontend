@@ -102,24 +102,20 @@ const Events = () => {
           </div>
           <Reveal effect="fadeInUp">
             <div className="container">
-              <div className="section-header pb-30 cl-white">
-                <h5 className="cate">Upcoming Events</h5>
-                <h2 className="title">RobotThon</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Tempora architecto dicta, suscipit, fugiat repudiandae,
-                  aspernatur dolore eos nesciunt harum iure eum? Cumque ipsa
-                  pariatur laborum, eius aut exercitationem culpa odit.
-                </p>
+              <div className="section-header pb-30 cl-white custom">
+                <h5 className="cate">Recent Events</h5>
+                <h2 className="title">RoboQuiz 2.O</h2>
+                <p>D2c contest</p>
               </div>
-              <div className="range-wrapper-2">
+
+              {/* <div className="range-wrapper-2">
                 <div className="pricing-range">
                   <div className="pricing-range-top pt-0">
                     <div className="tags-area">
                       <h3 className="tags">Schedule</h3>
                     </div>
 
-                    {/* **********************************CARAOUSEL STARTS************************ */}
+                    
                     <div className="history-slider owl-theme owl-carousel">
                       <div className="history-item">
                         <div className="history-content">
@@ -228,221 +224,10 @@ const Events = () => {
                     </div>
                   </div>
                   <div className="pricing-range-bottom">
-                    {/* <div className="history-slider owl-theme owl-carousel">
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2014</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2015</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2016</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2017</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2018</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2019</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2021</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2014</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2015</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2016</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2017</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2018</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2019</span>
-                      </div>
-                    </div>
-                    <div className="history-item">
-                      <div className="history-content">
-                        <div className="content">
-                          <h6 className="title">We Are Growing</h6>
-                          <p>
-                            emeritis hibridas hic dignus de fortis, altus
-                            orexisstoria
-                          </p>
-                        </div>
-                      </div>
-                      <div className="history-thumb">
-                        <div className="anime-item-2"></div>
-                        <span>2021</span>
-                      </div>
-                    </div>
-                  </div> */}
+                    
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </Reveal>
         </section>

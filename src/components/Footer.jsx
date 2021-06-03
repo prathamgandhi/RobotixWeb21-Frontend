@@ -44,7 +44,7 @@ function Footer() {
                             <p style={{fontSize:"1rem", opacity:"0.8", fontFamily:'"Josefin Sans", san serif'}}>
                                 Copyright © 2021. All Rights Reserved By <a href="#0">Robotix Club</a>
                             </p>
-                            <p style={{fontSize:"0.9rem", opacity:"0.8", fontFamily:'"Josefin Sans", san serif'}}>Made by <span className = "X">RobotiX Web Team</span></p>
+                            {/* <p style={{fontSize:"0.9rem", opacity:"0.8", fontFamily:'"Josefin Sans", san serif'}}>Made by <span className = "X">RobotiX Web Team</span></p> */}
                         </div>
                     </div>
                 </div>
