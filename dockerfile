@@ -1,5 +1,3 @@
-# The first stage
-# Build React static files
 FROM node:current-alpine as build
 
 WORKDIR /app/frontend
@@ -9,8 +7,6 @@ RUN npm ci --silent
 COPY ./ ./
 RUN npm run build
 
-# The second stage
-# Copy React static files and start nginx
 FROM nginx:stable-alpine
 COPY --from=build /app/frontend/build /usr/share/nginx/html
 
