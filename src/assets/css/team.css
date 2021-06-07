@@ -148,6 +148,7 @@ padding-left: 20px;
     border: 1px solid rgb(219, 118, 219);
     border-radius: 10px;
     margin: 10px 50px;
+    width: fit-content;
 }
 .tablinks:hover{
     background-color: rgb(224, 28, 224);
