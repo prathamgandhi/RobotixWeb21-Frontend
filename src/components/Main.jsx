@@ -15,7 +15,7 @@ function Main() {
                         <span></span>
                         <span></span>
                     </div> */}
-            <TrinityRingsSpinner color="#a12fff" size="200" />
+            <TrinityRingsSpinner color="#a12fff" size={200} />
           </div>
         </div>
         <a href="#0" className="scrollToTop">

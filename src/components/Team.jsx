@@ -7,7 +7,7 @@ import Reveal from "react-reveal/Reveal";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
-// import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
 // import PhoneIcon from "@material-ui/icons/Phone";
 export const Team = () => {
 
@@ -48,6 +48,7 @@ export const Team = () => {
 
     }, [])
 
+
     const changeDomain = (domain, j) => {
         window.TeamDomain(domain, j);
     };
@@ -73,8 +74,8 @@ export const Team = () => {
             </div>
           </Reveal>  
 
-            {teamData.loading ? <div class="d-flex justify-content-center"><div class="spinner-border text-secondary" role="status">
-                <span class="sr-only">Loading...</span>
+            {teamData.loading ? <div className="d-flex justify-content-center"><div className="spinner-border text-secondary" role="status">
+                <span className="sr-only">Loading...</span>
             </div></div> :
 
                 <Fragment>
@@ -115,7 +116,7 @@ export const Team = () => {
                         return (
 
                             <div id={teamCategory} key={index} className="tabcontent">
-                                <section id="team" className="team section-padding " tabindex="-1">
+                                <section id="team" className="team section-padding " tabIndex="-1">
                                     <div className="container">
                                         <div className="row mb-5">
 
@@ -127,16 +128,17 @@ export const Team = () => {
                                                     <div key={index} className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style={{ animationDelay: '0.8s', opacity: '1' }}>
                                                         <div className="d-flex team-member">
                                                             <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
-                                                                <img src="https://icon-library.com/images/ai-icon/ai-icon-7.jpg" alt="team-profile-1" className="rounded-circle" width="128" />
+                                                                {/* <img src="https://icon-library.com/images/ai-icon/ai-icon-7.jpg" alt="team-profile-1" className="rounded-circle" width="128" /> */}
+                                                                <img src={member.photo} alt="team-profile-1" className="rounded-circle" width="128" />
                                                             </div>
                                                             <div className="profile align-self-center" >
                                                                 <div className="name">{member.name}</div>
                                                                 <div className="role">{member.branch}</div>
-                                                                <div className="social-profile mt-3">
-                                                                    <a href="/" title="Linkedin" className="font-medium grey-accent2 mr-2"><LinkedInIcon fontSize="medium"/> </a>
-                                                                    <a href="/" title="Facebook" className="font-medium grey-accent2 mr-2"><FacebookIcon fontSize="medium"/></a>
-                                                                    <a href="/" title="Instagram" className="font-medium grey-accent2"> <InstagramIcon fontSize="medium"/></a>
-                                                                   {/* <a href="/" title="Mail" className="font-medium grey-accent2"> <MailOutlineIcon/></a> */}
+                                                                <div className="social-profile mt-3"> 
+                                                                    <a target="_blank" href={member.github_url} title="Linkedin" className="font-medium grey-accent2 mr-2"><LinkedInIcon fontSize="default"/> </a>
+                                                                    <a  href={member.fb_url} title="Facebook" className="font-medium grey-accent2 mr-2"><FacebookIcon fontSize="default"/></a>
+                                                                    <a target="_blank" href={member.instagram_url} title="Instagram" className="font-medium grey-accent2 mr-2"> <InstagramIcon fontSize="default"/></a>
+                                                                   <a target="_blank" href={`mailto:${member.email_id}`} title="Mail" className="font-medium grey-accent2"> <MailOutlineIcon/></a> 
                                                                 </div>
                                                             </div>
                                                         </div>

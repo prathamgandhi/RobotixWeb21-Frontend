@@ -52,6 +52,9 @@
 }
 .team .team-img img {
   border : 5px solid #FFFFFF;
+  max-height: 129px;
+  min-height: 129px;
+  object-fit: cover;
 }
 .team .team-img:before {
   content : '';
