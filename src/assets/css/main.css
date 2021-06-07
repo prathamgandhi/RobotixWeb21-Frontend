@@ -17830,3 +17830,101 @@ div[class*="col"]:nth-of-type(3n + 3) .pricing-item-20 {
         height: 50px;
     }
 }
+@media(min-width:770px){
+.social-icons{
+   margin-left:-40px;
+}
+}
+.social-icons i {
+    color: #fff;
+  position: relative;
+  top: -65px;
+  right: -3px;
+  
+    transition: all 265ms ease-out;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons a:before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, rgb(34 0 245), rgb(143 0 125));
+    transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+    transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    color: #d800f5;
+    background: -webkit-linear-gradient(45deg, #d39fdc, #8a008f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+}
+.icon {
+    position: relative;
+    display: inline-block;
+    padding:10px;
+    height:70px;
+    /* border-bottom: 1px dotted black; */
+}
+
+.icon .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -40px;
+    font-size:15px;
+    opacity:0.8;
+}
+
+.icon .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent;
+}
+
+.icon:hover .tooltiptext {
+    visibility: visible;
+}
+.fa {
+    border-radius: 30px;
+    padding: 8px;
+    margin: 10px auto;
+}
+@media screen and (max-width:420px) {
+   
+
+    .icon .tooltiptext {
+        width: 80px;
+        
+    }
+}
