@@ -40,4 +40,4 @@ jobs:
           message: |
             New Frontend Image Push to Dockerhub 
             To Push the build to server click here,
-            http://3.108.0.154:8080/job/robotixweb-d/build?token=AAEx01YYjDJWTazuddZkgEhj4AVVFwsJEZQ
+            ${{ secrets.JENKIN_BUILD_URL }}
