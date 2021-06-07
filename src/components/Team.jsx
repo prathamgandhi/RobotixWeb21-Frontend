@@ -127,7 +127,7 @@ export const Team = () => {
                                                     <div key={index} className="col-sm-12 col-md-6 col-lg-4 mb-5 animated flipInX" data-animation="flipInX" data-animation-delay="0.8s" style={{ animationDelay: '0.8s', opacity: '1' }}>
                                                         <div className="d-flex team-member">
                                                             <div className="team-img float-left mr-3" data-toggle="modal" data-target="#teamUser9">
-                                                                <img src="https://image.flaticon.com/icons/png/512/194/194938.png" alt="team-profile-1" className="rounded-circle" width="128" />
+                                                                <img src="https://icon-library.com/images/ai-icon/ai-icon-7.jpg" alt="team-profile-1" className="rounded-circle" width="128" />
                                                             </div>
                                                             <div className="profile align-self-center" >
                                                                 <div className="name">{member.name}</div>
@@ -135,7 +135,7 @@ export const Team = () => {
                                                                 <div className="social-profile mt-3">
                                                                     <a href="/" title="Linkedin" className="font-medium grey-accent2 mr-2"><LinkedInIcon fontSize="medium"/> </a>
                                                                     <a href="/" title="Facebook" className="font-medium grey-accent2 mr-2"><FacebookIcon fontSize="medium"/></a>
-                                                                    <a href="/" title="Phone" className="font-medium grey-accent2"> <InstagramIcon fontSize="medium"/></a>
+                                                                    <a href="/" title="Instagram" className="font-medium grey-accent2"> <InstagramIcon fontSize="medium"/></a>
                                                                    {/* <a href="/" title="Mail" className="font-medium grey-accent2"> <MailOutlineIcon/></a> */}
                                                                 </div>
                                                             </div>
