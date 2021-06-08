@@ -1,5 +1,5 @@
 import React, {Fragment} from "react";
-
+import {Link} from "react-router-dom";
 
 function Navbar(){
 
@@ -40,6 +40,11 @@ return(
                     </li>
                     <li>
                         <button name="contact-section" className="navbtn" onClick={scroll}>Contact</button>
+                    </li>
+                    <li>
+                        <Link className="navbtn" to="/alumni">
+                        Alumni
+                        </Link>
                     </li>
                    
                 </ul>
