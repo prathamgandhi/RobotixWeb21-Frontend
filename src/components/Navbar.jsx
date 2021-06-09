@@ -42,9 +42,9 @@ return(
                         <button name="contact-section" className="navbtn" onClick={scroll}>Contact</button>
                     </li>
                     <li>
-                        <Link className="navbtn" to="/alumni">
+                        <a className="navbtn" href="/alumni">
                         Alumni
-                        </Link>
+                        </a>
                     </li>
                    
                 </ul>

@@ -2,22 +2,13 @@ import React, { Fragment } from "react";
 import Navbar from "./Navbar";
 import Reveal from "react-reveal/Reveal";
 import 'font-awesome/css/font-awesome.min.css';
-import TrinityRingsSpinner from "@bit/bondz.react-epic-spinners.trinity-rings-spinner";
 function Main() {
 
 
     return (
       <Fragment>
         <Navbar />
-        <div className="preloader">
-          <div className="preloader-inner">
-            {/* <div className="preloader-icon">
-                        <span></span>
-                        <span></span>
-                    </div> */}
-            <TrinityRingsSpinner color="#a12fff" size={200} />
-          </div>
-        </div>
+        
         <a href="#0" className="scrollToTop">
           <i className="fas fa-angle-up"></i>
         </a>
