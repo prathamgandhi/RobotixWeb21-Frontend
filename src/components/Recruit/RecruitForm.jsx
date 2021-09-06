@@ -1,9 +1,14 @@
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { useState } from "react";
 import "../../assets/css/recruitForm.css";
+import { WhatsApp } from "@material-ui/icons";
 
 const RecruitForm = () => {
   const [name, setName] = useState("");
+  const [email,setEmail] = useState("");
+  const [contact,setContact] = useState("");
+  const [whatsapp,setWhatsapp] = useState("");
+  const [sem,setSem] = useState(0);
   function step2(value) {
     document.getElementById("step1").style.display = "none";
     document.getElementById("step2").style.display = "block";
@@ -68,6 +73,8 @@ const RecruitForm = () => {
                     </Col>
                     <Col xs={8}>
                       <input
+                        onChange={(e)=>setName(e.target.value)}
+                        value={name}
                         type="text"
                         id="name"
                         placeholder="Your name..."
@@ -81,6 +88,8 @@ const RecruitForm = () => {
                     </Col>
                     <Col xs={8}>
                       <input
+                        onChange={(e)=>setEmail(e.target.value)}
+                        value={email}
                         type="text"
                         id="email"
                         placeholder="Your email..."
@@ -94,6 +103,8 @@ const RecruitForm = () => {
                     </Col>
                     <Col xs={8}>
                       <input
+                        onChange={(e)=>setContact(e.target.value)}
+                        value={contact}
                         type="text"
                         id="phone"
                         placeholder="Your phone no..."
@@ -107,6 +118,8 @@ const RecruitForm = () => {
                     </Col>
                     <Col xs={8}>
                       <input
+                        onChange={(e)=>setWhatsapp(e.target.value)}
+                        value={whatsapp}
                         type="text"
                         id="whatsapp"
                         placeholder="Your Whatsapp no..."
@@ -123,6 +136,8 @@ const RecruitForm = () => {
                         <Form.Group controlId="exampleForm.SelectCustom">
                           <Form.Control
                             as="select"
+                            onChange={(e)=>setSem(e.target.value)}
+                            value={sem}
                             custom
                             style={{
                               backgroundColor: "rgba(0, 212, 201, 0)",
