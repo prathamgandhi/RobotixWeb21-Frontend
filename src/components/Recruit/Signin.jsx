@@ -20,11 +20,11 @@ function Signin(props) {
                             <h4 className="title mb-20">Welcome To Robotix Club</h4>
                             <div className="account-form">
                                 <div className="form-group">
-                                    <label for="sign-up">Your Email </label>
+                                    <label htmlFor="sign-up">Your Email </label>
                                     <input type="text" placeholder="Enter Your Email " id="sign-up" name="email" onChange={props.funcHandleInput} />
                                 </div>
                                 <div className="form-group">
-                                    <label for="pass">Password</label>
+                                    <label htmlFor="pass">Password</label>
                                     <input type="text" placeholder="Enter Your Password" id="pass" name="password" onChange={props.funcHandleInput} />
                                     <span className="sign-in-recovery">Forgot your password? <a href="reset-password.html">recover password</a></span>
                                 </div>

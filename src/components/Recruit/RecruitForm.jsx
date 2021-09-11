@@ -10,12 +10,12 @@ import { WhatsApp } from "@material-ui/icons";
 const RecruitForm = () => {
   useEffect(() => {
     api.get("/recruitment/")
-    .then(response => {
-      console.log(response)
+    .then(response =>{ 
+      console.log(response.data)
     })
     .catch(error => {
     })
-  }, [])
+  })
 
   return (
     <div>
