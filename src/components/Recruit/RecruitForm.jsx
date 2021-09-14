@@ -1,4 +1,4 @@
-import {useEffect} from "react";
+import { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import api from "../../service";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -6,16 +6,22 @@ import LandingForm from "./LandingForm";
 import Domain1 from "./Domain1";
 import "../../assets/css/recruitForm.css";
 import { WhatsApp } from "@material-ui/icons";
+import axios from "axios";
 
 const RecruitForm = () => {
+  const [questions, setQuestion] = useState(null);
+
   useEffect(() => {
-    api.get("/recruitment/")
-    .then(response =>{ 
-      console.log(response.data)
-    })
-    .catch(error => {
-    })
-  })
+    api
+      .get("/recruitment/response")
+      .then((response) => {
+        setQuestion(response.data);
+        console.log(questions.ALL);
+        localStorage.setItem("data", questions.ALL[0]);
+      })
+
+      .catch((error) => {});
+  }, []);
 
   return (
     <div>
@@ -63,13 +69,13 @@ const RecruitForm = () => {
         <BrowserRouter>
           <Switch>
             <Route path="/recruitment_form">
-              <LandingForm/>
+              <LandingForm />
             </Route>
             <Route path="/Domain1">
-              <Domain1/>
+              <Domain1 questions={questions} />
             </Route>
           </Switch>
-      </BrowserRouter>
+        </BrowserRouter>
       </div>
     </div>
   );
