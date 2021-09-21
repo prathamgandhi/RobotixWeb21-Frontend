@@ -10,7 +10,7 @@ const LandingForm = () => {
   const [whatsapp, setWhatsapp] = useState("");
   const [sem, setSem] = useState(0);
   return (
-    <Container>
+    <Container className="step1">
       <Row>
         <Col xs={12} md={6}>
           <Container style={{ padding: "10px" }}>

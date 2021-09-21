@@ -16,8 +16,7 @@ const RecruitForm = () => {
       .get("/recruitment/response")
       .then((response) => {
         setQuestion(response.data);
-        console.log(questions.ALL);
-        localStorage.setItem("data", questions.ALL[0]);
+        console.log(questions);
       })
 
       .catch((error) => {});

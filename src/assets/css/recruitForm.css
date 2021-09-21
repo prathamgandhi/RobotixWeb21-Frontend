@@ -73,7 +73,7 @@ label {
   line-height: 50px;
   vertical-align: middle;
 }
-input[type="text"] {
+.step1 input[type="text"] {
   background: none;
   border: none;
   border-bottom: 2px solid rgba(195, 0, 255, 0.5);
@@ -83,12 +83,12 @@ input[type="text"] {
   outline: none;
   margin: 15px 0px;
 }
-input[type="text"]:focus {
+.step1 input[type="text"]:focus {
   outline: none;
   border: none;
   border-bottom: 2px solid rgba(0, 212, 201, 0.849);
 }
-input[type="text"]:hover {
+.step1 input[type="text"]:hover {
   outline: none;
   border: none;
   border-bottom: 2px solid rgba(0, 212, 201, 0.849);
@@ -126,4 +126,18 @@ input[type="text"]:hover {
 
 #step2 {
   display: none;
+}
+
+.options {
+  padding-left: 20px;
+}
+
+.step2 input[type="checkbox"] {
+  width: 14px !important;
+  height: 14px !important;
+  margin-right: 10px;
+}
+
+.ques {
+  margin: 20px 0px;
 }
