@@ -3,12 +3,22 @@ import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../../assets/css/recruitForm.css";
 
-const LandingForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [contact, setContact] = useState("");
-  const [whatsapp, setWhatsapp] = useState("");
-  const [sem, setSem] = useState(0);
+const LandingForm = ({getValues,placeValues}) => {
+  const [name, setName] = useState(placeValues?placeValues.name:"");
+  const [email, setEmail] = useState(placeValues?placeValues.email:"");
+  const [contact, setContact] = useState(placeValues?placeValues.contact:"");
+  const [whatsapp, setWhatsapp] = useState(placeValues?placeValues.whatsapp:"");
+  const [sem, setSem] = useState(placeValues?placeValues.sem:0);
+  const setValue = ()=>{
+    let values ={
+      name,
+      email,
+      contact,
+      whatsapp,
+      sem
+    };
+    getValues(values);
+  }
   return (
     <Container className="step1">
       <Row>
@@ -162,7 +172,7 @@ const LandingForm = () => {
       </Row>
       <Row>
         <Link to={"/Domain1"}>
-          <Button style={{ float: "right" }} variant="info">
+          <Button style={{ float: "right" }} variant="info" onClick={()=>setValue()}>
             Next
           </Button>
         </Link>
