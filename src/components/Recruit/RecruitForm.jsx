@@ -4,6 +4,7 @@ import api from "../../service";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LandingForm from "./LandingForm";
 import Domain1 from "./Domain1";
+import Submit from "./Submit.jsx";
 import "../../assets/css/recruitForm.css";
 import { WhatsApp } from "@material-ui/icons";
 import axios from "axios";
@@ -21,15 +22,17 @@ const RecruitForm = () => {
       .catch((error) => {});
   }, []);
 
-  const getValues = (values)=>{
+  const getValues = (values) => {
     console.log(values);
     setValues(values);
-  }
+  };
 
   return (
     <div>
       <div className="r_back"></div>
+
       <div className="back_glass">
+        <div className="r_top_back"></div>
         <div id="step1">
           <div className="r_topnav">
             <Container>
@@ -38,7 +41,7 @@ const RecruitForm = () => {
                   <div className="r_txt1">Join us at RobotiX Club!</div>
                 </Col>
                 <Col style={{ padding: "0px" }}>
-                  <div className="r_link r_active">
+                  <div className="r_link " id="a_step1">
                     Step1{" "}
                     <i
                       className="fa fa-angle-double-right"
@@ -47,7 +50,7 @@ const RecruitForm = () => {
                   </div>
                 </Col>
                 <Col style={{ padding: "0px" }}>
-                  <div className="r_link">
+                  <div className="r_link " id="a_step2">
                     Step2{" "}
                     <i
                       className="fa fa-angle-double-right"
@@ -56,7 +59,7 @@ const RecruitForm = () => {
                   </div>
                 </Col>
                 <Col style={{ padding: "0px" }}>
-                  <div className="r_link">
+                  <div className="r_link " id="a_step3">
                     Step3{" "}
                     <i
                       className="fa fa-angle-double-right"
@@ -72,10 +75,13 @@ const RecruitForm = () => {
         <BrowserRouter>
           <Switch>
             <Route path="/recruitment_form">
-              <LandingForm getValues={getValues} placeValues={values}/>
+              <LandingForm getValues={getValues} placeValues={values} />
             </Route>
             <Route path="/Domain1">
               <Domain1 questions={questions} />
+            </Route>
+            <Route path="/submit">
+              <Submit />
             </Route>
           </Switch>
         </BrowserRouter>

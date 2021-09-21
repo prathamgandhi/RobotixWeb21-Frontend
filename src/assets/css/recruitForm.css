@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .form-check-input {
   height: 15px;
   color: #bdb9f0;
@@ -13,6 +16,8 @@
   height: 100%;
   z-index: -1;
   background: url("../../assets/images/account-bg.jpg");
+  padding: 0;
+  margin: 0;
 }
 
 .back_glass {
@@ -21,12 +26,17 @@
   left: 3%;
   width: 94%;
   height: 94%;
-  background: rgba(74, 0, 109, 0.315);
+  background: rgba(74, 0, 109, 0.212);
   backdrop-filter: blur(10px);
   overflow-y: scroll;
   border-radius: 20px;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  padding: 0;
+  margin-top: 0;
+  overflow-x: hidden;
+  z-index: 0;
+  padding-top: 80px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -35,15 +45,27 @@
 }
 
 .r_topnav {
-  position: relative;
-  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  margin: 0;
   height: 60px;
   border-bottom: 1px solid rgba(123, 38, 202, 0.274);
-  backdrop-filter: blur(10px);
-  margin-bottom: 20px;
+  z-index: 2;
 }
 
+.r_top_back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  /* backdrop-filter: blur(0px); */
+  background-color: rgba(74, 0, 109, 0.212);
+  z-index: 1;
+}
 .r_link {
   line-height: 60px;
   vertical-align: middle;
@@ -103,7 +125,7 @@ label {
 }
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #ffc0cb59;
+  color: #ffffff93;
 }
 ::-moz-placeholder {
   /* Firefox 19+ */
@@ -121,6 +143,13 @@ label {
 @media screen and (max-width: 786px) {
   .r_topnav {
     height: 120px;
+    width: 100%;
+  }
+  .r_top_back {
+    height: 120px;
+  }
+  .back_glass {
+    padding-top: 140px;
   }
 }
 
@@ -138,6 +167,79 @@ label {
   margin-right: 10px;
 }
 
+.step2 input[type="checkbox"] {
+  width: 14px !important;
+  height: 14px !important;
+  margin-right: 10px;
+}
+
 .ques {
   margin: 20px 0px;
+}
+
+.rec_btn {
+  border: none;
+  background-color: rgba(98, 0, 255, 0.103);
+  backdrop-filter: blur(10px);
+  display: block;
+  float: right;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 10px 20px;
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+.rec_btn:hover {
+  background-color: rgba(119, 0, 255, 0.548);
+}
+.rec_btn_wrap {
+  position: relative;
+
+  width: 100%;
+  text-align: right;
+}
+
+.submit_form {
+  position: fixed;
+  top: 40%;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.submit_form_btn {
+  padding: 20px 40px;
+  font-size: 35px;
+  margin: 10px auto;
+  font-weight: 700;
+  color: white;
+  background-color: rgba(205, 50, 197, 0.301);
+  width: fit-content;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  animation: hover 1s infinite;
+  animation-timing-function: ease-in-out;
+  -webkit-box-shadow: 0px 0px 30px rgba(205, 50, 197, 0.301);
+  -moz-box-shadow: 0px 0px 30px rgba(205, 50, 197, 0.301);
+  box-shadow: 0px 0px 30px rgba(205, 50, 197, 0.301); /* some variation of blue for the shadow */
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes hover {
+  0% {
+    margin-top: 4px;
+  }
+  50% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 4px;
+  }
+}
+
+.submit_form_btn:hover {
+  animation: none;
+  letter-spacing: 3px;
 }

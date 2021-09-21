@@ -1,24 +1,34 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../../assets/css/recruitForm.css";
 
-const LandingForm = ({getValues,placeValues}) => {
-  const [name, setName] = useState(placeValues?placeValues.name:"");
-  const [email, setEmail] = useState(placeValues?placeValues.email:"");
-  const [contact, setContact] = useState(placeValues?placeValues.contact:"");
-  const [whatsapp, setWhatsapp] = useState(placeValues?placeValues.whatsapp:"");
-  const [sem, setSem] = useState(placeValues?placeValues.sem:0);
-  const setValue = ()=>{
-    let values ={
+const LandingForm = ({ getValues, placeValues }) => {
+  useEffect(() => {
+    document.getElementById("a_step1").classList.add("r_active");
+    document.getElementById("a_step2").classList.remove("r_active");
+    document.getElementById("a_step3").classList.remove("r_active");
+  });
+
+  const [name, setName] = useState(placeValues ? placeValues.name : "");
+  const [email, setEmail] = useState(placeValues ? placeValues.email : "");
+  const [contact, setContact] = useState(
+    placeValues ? placeValues.contact : ""
+  );
+  const [whatsapp, setWhatsapp] = useState(
+    placeValues ? placeValues.whatsapp : ""
+  );
+  const [sem, setSem] = useState(placeValues ? placeValues.sem : 0);
+  const setValue = () => {
+    let values = {
       name,
       email,
       contact,
       whatsapp,
-      sem
+      sem,
     };
     getValues(values);
-  }
+  };
   return (
     <Container className="step1">
       <Row>
@@ -170,13 +180,14 @@ const LandingForm = ({getValues,placeValues}) => {
           </Row>
         </Col>
       </Row>
-      <Row>
+      <div className="rec_btn_wrap">
         <Link to={"/Domain1"}>
-          <Button style={{ float: "right" }} variant="info" onClick={()=>setValue()}>
-            Next
-          </Button>
+          <div className="rec_btn">
+            Step 2{" "}
+            <i className="fa fa-angle-double-right" aria-hidden="true"></i>
+          </div>
         </Link>
-      </Row>
+      </div>
     </Container>
   );
 };
