@@ -162,7 +162,7 @@ const LandingForm = ({ getValues, placeValues }) => {
                 value="30"
               />
 
-              <label style={{ lineHeight: "1" }} for="age1">
+              <label style={{ lineHeight: "1" }} htmlFor="age1">
                 radio1
               </label>
 
@@ -173,7 +173,7 @@ const LandingForm = ({ getValues, placeValues }) => {
                 name="age"
                 value="60"
               />
-              <label style={{ lineHeight: "1" }} for="age2">
+              <label style={{ lineHeight: "1" }} htmlFor="age2">
                 radio2
               </label>
             </form>
@@ -181,7 +181,7 @@ const LandingForm = ({ getValues, placeValues }) => {
         </Col>
       </Row>
       <div className="rec_btn_wrap">
-        <Link to={"/Domain1"}>
+        <Link to={"/Domain1"} onClick={setValue}>
           <div className="rec_btn">
             Step 2{" "}
             <i className="fa fa-angle-double-right" aria-hidden="true"></i>

@@ -12,6 +12,7 @@ import axios from "axios";
 const RecruitForm = () => {
   const [questions, setQuestion] = useState(null);
   const [values, setValues] = useState(null);
+  const [domainValues,setDomainValues] = useState([]);
   useEffect(() => {
     api
       .get("/recruitment/response")
@@ -26,6 +27,11 @@ const RecruitForm = () => {
     console.log(values);
     setValues(values);
   };
+
+  const getDomainValues = (values) =>{
+    console.log(values);
+    setDomainValues(values);
+  }
 
   return (
     <div>
@@ -78,7 +84,7 @@ const RecruitForm = () => {
               <LandingForm getValues={getValues} placeValues={values} />
             </Route>
             <Route path="/Domain1">
-              <Domain1 questions={questions} />
+              <Domain1 questions={questions} domainValues={domainValues} getDomainValues={getDomainValues} />
             </Route>
             <Route path="/submit">
               <Submit />
