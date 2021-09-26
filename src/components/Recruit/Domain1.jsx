@@ -16,7 +16,6 @@ const Domain1 = ({
   }, []);
 
   const queId = [];
-  const [arr, setArr] = useState([]);
   const [que, setQue] = useState([]);
   useEffect(() => {
     console.log(questions);

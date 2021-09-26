@@ -116,43 +116,49 @@ const RecruitForm = () => {
                 showback={true}
                 shownext={false}
               />
-              <Domain1
+              {JSON.parse(localStorage.getItem("selDomains")).includes("CORE") && <Domain1
                 questions={questions}
                 domainValues={domainValuesCORE}
                 getDomainValues={getDomainValuesCORE}
                 DomainFilter="CORE"
                 showback={false}
                 shownext={false}
-              />
-              <Domain1
+              />}
+              {JSON.parse(localStorage.getItem("selDomains")).includes("DESIGN") && <Domain1
                 questions={questions}
                 domainValues={domainValuesDESIGN}
                 getDomainValues={getDomainValuesDESIGN}
                 DomainFilter="DESIGN"
                 showback={false}
                 shownext={false}
-              />
-              <Domain1
+              />}
+              {JSON.parse(localStorage.getItem("selDomains")).includes("PR") &&<Domain1
                 questions={questions}
                 domainValues={domainValuesPR}
                 getDomainValues={getDomainValuesPR}
                 DomainFilter="PR"
                 showback={false}
                 shownext={false}
-              />
-              <Domain1
+              />}
+              {JSON.parse(localStorage.getItem("selDomains")).includes("DOCS") &&<Domain1
                 questions={questions}
                 domainValues={domainValuesDOCS}
                 getDomainValues={getDomainValuesDOCS}
                 DomainFilter="DOCS"
                 showback={false}
                 shownext={false}
-              />
-              <Domain1
+              />}
+              {JSON.parse(localStorage.getItem("selDomains")).includes("WEB") &&<Domain1
                 questions={questions}
                 domainValues={domainValuesWEB}
                 getDomainValues={getDomainValuesWEB}
                 DomainFilter="WEB"
+                showback={false}
+                shownext={false}
+              />}
+              <Domain1
+                domainValues={[]}
+                getDomainValues={(e)=>"jdsk"}
                 showback={false}
                 shownext={true}
               />
