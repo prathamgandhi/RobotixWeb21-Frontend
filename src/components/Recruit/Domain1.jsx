@@ -14,7 +14,7 @@ const Domain1 = ({
   }, []);
   let que;
   const queId = [];
-
+  const [arr,setArr] = useState([]);
   useEffect(() => {
     console.log(questions);
     if (domainValues.length !== 0) {
@@ -55,174 +55,173 @@ const Domain1 = ({
     });
     getDomainValues(ans);
   };
-  let arr = [];
-  const getArray = () => {
-    for (var x in questions) {
-      if (x === DomainFilter) {
-        arr = questions.x;
-      }
-    }
-  };
 
-  que = questions.ALL.toString().map((element) => {
-    // console.log(element);
-    if (element.question_type === "MultipleChoice") {
-      queId.push(element.question_id + "#1");
-      queId.push(element.question_id + "#2");
-      queId.push(element.question_id + "#3");
-      queId.push(element.question_id + "#4");
-      return (
-        <div key={element.question_id}>
-          <div className="ques">
-            <li>{element.question}</li>
-
-            <div className="options">
-              <input
-                type="checkbox"
-                id={element.question_id + "#1"}
-                value={element.option1}
-              />{" "}
-              {element.option1} <br />
-              <input
-                type="checkbox"
-                id={element.question_id + "#2"}
-                value={element.option2}
-              />{" "}
-              {element.option2} <br />
-              <input
-                type="checkbox"
-                id={element.question_id + "#3"}
-                value={element.option3}
-              />{" "}
-              {element.option3} <br />
-              <input
-                type="checkbox"
-                id={element.question_id + "#4"}
-                value={element.option4}
-              />{" "}
-              {element.option4} <br />
-            </div>
-          </div>
-        </div>
-      );
-    } else if (element.question_type === "SingleChoice") {
-      queId.push(element.question_id + "#1");
-      queId.push(element.question_id + "#2");
-      queId.push(element.question_id + "#3");
-      queId.push(element.question_id + "#4");
-      return (
-        <div key={element.question_id}>
-          <div>
-            <div className="ques">
-              <li>{element.question}</li>
-              <div className="options">
-                <form style={{ width: "100%", float: "left" }}>
-                  <table>
-                    <tr>
-                      <td>
-                        <input
-                          style={{ height: "14px", width: "14px" }}
-                          type="radio"
-                          id={element.question_id + "#1"}
-                          name="age"
-                          value={element.option1}
-                          name="singleChoice"
-                        />
-                      </td>
-                      <td>
-                        {" "}
-                        <label
-                          style={{ lineHeight: "1", marginLeft: "10px" }}
-                          htmlFor="age3"
-                        >
-                          {element.option1}
-                        </label>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        {" "}
-                        <input
-                          style={{ height: "14px", width: "14px" }}
-                          type="radio"
-                          id={element.question_id + "#2"}
-                          name="age"
-                          value={element.option2}
-                          name="singleChoice"
-                        />
-                      </td>{" "}
-                      <td>
-                        <label
-                          style={{ lineHeight: "1", marginLeft: "10px" }}
-                          htmlFor="age2"
-                        >
-                          {element.option2}
-                        </label>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <input
-                          style={{ height: "14px", width: "14px" }}
-                          type="radio"
-                          id={element.question_id + "#3"}
-                          name="age"
-                          value={element.option3}
-                          name="singleChoice"
-                        />
-                      </td>
-                      <td>
-                        {" "}
-                        <label
-                          style={{ lineHeight: "1", marginLeft: "10px" }}
-                          htmlFor="age3"
-                        >
-                          {element.option3}
-                        </label>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        {" "}
-                        <input
-                          style={{ height: "14px", width: "14px" }}
-                          type="radio"
-                          id={element.question_id + "#4"}
-                          name="age"
-                          value={element.option4}
-                          name="singleChoice"
-                        />
-                      </td>
-                      <td>
-                        <label
-                          style={{ lineHeight: "1", marginLeft: "10px" }}
-                          htmlFor="age4"
-                        >
-                          {element.option4}
-                        </label>
-                      </td>
-                    </tr>
-                  </table>
-                </form>
+  useEffect(()=>{
+      for (var x in questions) {
+        if (x === DomainFilter) {
+        // console.log(questions[x]);
+        que = questions[x].map((element) => {
+          // console.log(element);
+          if (element.question_type === "MultipleChoice") {
+            queId.push(element.question_id + "#1");
+            queId.push(element.question_id + "#2");
+            queId.push(element.question_id + "#3");
+            queId.push(element.question_id + "#4");
+            return (
+              <div key={element.question_id}>
+                <div className="ques">
+                  <li>{element.question}</li>
+      
+                  <div className="options">
+                    <input
+                      type="checkbox"
+                      id={element.question_id + "#1"}
+                      value={element.option1}
+                    />{" "}
+                    {element.option1} <br />
+                    <input
+                      type="checkbox"
+                      id={element.question_id + "#2"}
+                      value={element.option2}
+                    />{" "}
+                    {element.option2} <br />
+                    <input
+                      type="checkbox"
+                      id={element.question_id + "#3"}
+                      value={element.option3}
+                    />{" "}
+                    {element.option3} <br />
+                    <input
+                      type="checkbox"
+                      id={element.question_id + "#4"}
+                      value={element.option4}
+                    />{" "}
+                    {element.option4} <br />
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      );
-    } else if (element.question_type === "Answer") {
-      queId.push(element.question_id);
-      return (
-        <div key={element.question_id}>
-          <div>
-            <li>{element.question}</li>
-          </div>
-          <br />
-          <textarea className="textarea" id={element.question_id}></textarea>
-        </div>
-      );
-    }
-  });
-  // {messages.map((message,i)=><div key={i}><ChatBox message={message} name={name}/></div>)}
+            );
+          } else if (element.question_type === "SingleChoice") {
+            queId.push(element.question_id + "#1");
+            queId.push(element.question_id + "#2");
+            queId.push(element.question_id + "#3");
+            queId.push(element.question_id + "#4");
+            return (
+              <div key={element.question_id}>
+                <div>
+                  <div className="ques">
+                    <li>{element.question}</li>
+                    <div className="options">
+                      <form style={{ width: "100%", float: "left" }}>
+                        <table>
+                          <tr>
+                            <td>
+                              <input
+                                style={{ height: "14px", width: "14px" }}
+                                type="radio"
+                                id={element.question_id + "#1"}
+                                name="age"
+                                value={element.option1}
+                                name="singleChoice"
+                              />
+                            </td>
+                            <td>
+                              {" "}
+                              <label
+                                style={{ lineHeight: "1", marginLeft: "10px" }}
+                                htmlFor="age3"
+                              >
+                                {element.option1}
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              {" "}
+                              <input
+                                style={{ height: "14px", width: "14px" }}
+                                type="radio"
+                                id={element.question_id + "#2"}
+                                name="age"
+                                value={element.option2}
+                                name="singleChoice"
+                              />
+                            </td>{" "}
+                            <td>
+                              <label
+                                style={{ lineHeight: "1", marginLeft: "10px" }}
+                                htmlFor="age2"
+                              >
+                                {element.option2}
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <input
+                                style={{ height: "14px", width: "14px" }}
+                                type="radio"
+                                id={element.question_id + "#3"}
+                                name="age"
+                                value={element.option3}
+                                name="singleChoice"
+                              />
+                            </td>
+                            <td>
+                              {" "}
+                              <label
+                                style={{ lineHeight: "1", marginLeft: "10px" }}
+                                htmlFor="age3"
+                              >
+                                {element.option3}
+                              </label>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              {" "}
+                              <input
+                                style={{ height: "14px", width: "14px" }}
+                                type="radio"
+                                id={element.question_id + "#4"}
+                                name="age"
+                                value={element.option4}
+                                name="singleChoice"
+                              />
+                            </td>
+                            <td>
+                              <label
+                                style={{ lineHeight: "1", marginLeft: "10px" }}
+                                htmlFor="age4"
+                              >
+                                {element.option4}
+                              </label>
+                            </td>
+                          </tr>
+                        </table>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          } else if (element.question_type === "Answer") {
+            queId.push(element.question_id);
+            return (
+              <div key={element.question_id}>
+                <div>
+                  <li>{element.question}</li>
+                </div>
+                <br />
+                <textarea className="textarea" id={element.question_id}></textarea>
+              </div>
+            );
+          }
+        });
+        }
+      }
+  },[que]);
+  
   return (
     <div>
       <Container className="step2">
