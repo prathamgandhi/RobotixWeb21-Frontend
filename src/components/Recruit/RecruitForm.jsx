@@ -12,7 +12,8 @@ import axios from "axios";
 const RecruitForm = () => {
   const [questions, setQuestion] = useState(null);
   const [values, setValues] = useState(null);
-  const [domainValues, setDomainValues] = useState([]);
+  const [domainValues,setDomainValues] = useState([]);
+  const [selDomains,setSelDomains] = useState([]);
   useEffect(() => {
     api
       .get("/recruitment/response")
@@ -28,10 +29,15 @@ const RecruitForm = () => {
     setValues(values);
   };
 
-  const getDomainValues = (values) => {
+  const getSelectedDomains = (value)=>{
+    console.log(value);
+    setSelDomains(value);
+  }
+
+  const getDomainValues = (values) =>{
     console.log(values);
     setDomainValues(values);
-  };
+  }
 
   return (
     <div>
@@ -43,7 +49,7 @@ const RecruitForm = () => {
           <div className="r_topnav">
             <Container>
               <Row>
-                <Col xs={12} md={4}>
+                <Col xs={12} md={3}>
                   <div className="r_txt1">Join us at RobotiX Club!</div>
                 </Col>
                 <Col style={{ padding: "0px" }}>
@@ -81,14 +87,10 @@ const RecruitForm = () => {
         <BrowserRouter>
           <Switch>
             <Route path="/recruitment_form">
-              <LandingForm getValues={getValues} placeValues={values} />
+              <LandingForm getValues={getValues} placeValues={values} getSelectedDomains={getSelectedDomains} selDomains={selDomains}/>
             </Route>
             <Route path="/Domain1">
-              <Domain1
-                questions={questions}
-                domainValues={domainValues}
-                getDomainValues={getDomainValues}
-              />
+              <Domain1 questions={questions} domainValues={domainValues} getDomainValues={getDomainValues} />
             </Route>
             <Route path="/submit">
               <Submit />
