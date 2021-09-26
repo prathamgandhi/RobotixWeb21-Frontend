@@ -13,6 +13,7 @@ const RecruitForm = () => {
   const [questions, setQuestion] = useState(null);
   const [values, setValues] = useState(null);
   const [domainValues,setDomainValues] = useState([]);
+  const [selDomains,setSelDomains] = useState([]);
   useEffect(() => {
     api
       .get("/recruitment/response")
@@ -27,6 +28,10 @@ const RecruitForm = () => {
     console.log(values);
     setValues(values);
   };
+
+  const getSelectedDomains = (value)=>{
+    setSelDomains(value);
+  }
 
   const getDomainValues = (values) =>{
     console.log(values);
@@ -81,7 +86,7 @@ const RecruitForm = () => {
         <BrowserRouter>
           <Switch>
             <Route path="/recruitment_form">
-              <LandingForm getValues={getValues} placeValues={values} />
+              <LandingForm getValues={getValues} placeValues={values} getSelectedDomains={getSelectedDomains} selDomains={selDomains}/>
             </Route>
             <Route path="/Domain1">
               <Domain1 questions={questions} domainValues={domainValues} getDomainValues={getDomainValues} />

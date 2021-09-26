@@ -3,7 +3,7 @@ import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../../assets/css/recruitForm.css";
 
-const LandingForm = ({ getValues, placeValues }) => {
+const LandingForm = ({ getValues, placeValues,getSelectedDomains,selDomains }) => {
   useEffect(() => {
     document.getElementById("a_step1").classList.add("r_active");
     document.getElementById("a_step2").classList.remove("r_active");
@@ -18,6 +18,19 @@ const LandingForm = ({ getValues, placeValues }) => {
   const [whatsapp, setWhatsapp] = useState(
     placeValues ? placeValues.whatsapp : ""
   );
+
+  useEffect(()=>{
+    if(selDomains.length!==0){
+      selDomains.map((element)=>{
+        for(let i=1;i<=5;i++){
+          let temp = document.getElementById(`cb${i}`);
+          if(temp.value === element){
+            temp.checked = true ;
+          }
+        }
+      })
+    }
+  },[])
   const [sem, setSem] = useState(placeValues ? placeValues.sem : 0);
   const setValue = () => {
     let values = {
@@ -29,6 +42,17 @@ const LandingForm = ({ getValues, placeValues }) => {
     };
     getValues(values);
   };
+  const getDomains = ()=>{
+    let selDoamins  = [];
+    for(let i=1;i<=5;i++){
+      let temp = document.getElementById(`cb${i}`);
+      if(temp.checked){
+        selDoamins.push(temp.value);
+      }
+    }
+    getSelectedDomains(selDomains);
+  }
+
   return (
     <Container className="step1">
       <Row>
@@ -157,53 +181,53 @@ const LandingForm = ({ getValues, placeValues }) => {
                   width: "40px",
                 }}
                 type="checkbox"
-                id="age1"
+                id="cb5"
                 name="age"
-                value="30"
+                value="CORE"
               />
-              <label style={{ lineHeight: "1" }} htmlFor="age1">
+              <label style={{ lineHeight: "1" }} htmlFor="cb5">
                 Core
               </label>
               <input
                 style={{ height: "15px", margin: "0px", width: "40px" }}
                 type="checkbox"
-                id="age2"
+                id="cb4"
                 name="age"
-                value="60"
+                value="DESIGN"
               />
-              <label style={{ lineHeight: "1" }} htmlFor="age2">
+              <label style={{ lineHeight: "1" }} htmlFor="cb4">
                 Design
               </label>
               <input
                 style={{ height: "15px", margin: "0px", width: "40px" }}
                 type="checkbox"
-                id="age2"
+                id="cb3"
                 name="age"
-                value="60"
+                value="DOCS"
               />
-              <label style={{ lineHeight: "1" }} htmlFor="age2">
+              <label style={{ lineHeight: "1" }} htmlFor="cb3">
                 Documentation
               </label>
               <br />
               <input
                 style={{ height: "15px", margin: "0px", width: "40px" }}
                 type="checkbox"
-                id="age2"
+                id="cb2"
                 name="age"
-                value="60"
+                value="PR"
               />
-              <label style={{ lineHeight: "1" }} htmlFor="age2">
+              <label style={{ lineHeight: "1" }} htmlFor="cb2">
                 Public Relations
               </label>
               <br />
               <input
                 style={{ height: "15px", margin: "0px", width: "40px" }}
                 type="checkbox"
-                id="age2"
+                id="cb1"
                 name="age"
-                value="60"
+                value="WEB"
               />
-              <label style={{ lineHeight: "1" }} htmlFor="age2">
+              <label style={{ lineHeight: "1" }} htmlFor="cb1">
                 Web
               </label>
             </form>
@@ -211,7 +235,7 @@ const LandingForm = ({ getValues, placeValues }) => {
         </Col>
       </Row>
       <div className="rec_btn_wrap">
-        <Link to={"/Domain1"} onClick={setValue}>
+        <Link to={"/Domain1"} onClick={setValue,getDomains} >
           <div className="rec_btn">
             Step 2{" "}
             <i className="fa fa-angle-double-right" aria-hidden="true"></i>
