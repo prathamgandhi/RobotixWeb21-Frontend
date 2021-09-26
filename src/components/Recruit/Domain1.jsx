@@ -58,6 +58,7 @@ const Domain1 = ({
   };
 
   useEffect(() => {
+    let que;
     for (var x in questions) {
       if (x === DomainFilter) {
         // console.log(questions[x]);
@@ -238,7 +239,7 @@ const Domain1 = ({
         );
       }
     }
-  }, [que]);
+  }, []);
 
   return (
     <div>

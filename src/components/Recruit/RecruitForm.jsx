@@ -44,7 +44,7 @@ const RecruitForm = () => {
           <div className="r_topnav">
             <Container>
               <Row>
-                <Col xs={12} md={3}>
+                <Col xs={12} md={4}>
                   <div className="r_txt1">Join us at RobotiX Club!</div>
                 </Col>
                 <Col style={{ padding: "0px" }}>
