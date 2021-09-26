@@ -6,6 +6,8 @@ const Domain1 = ({
   getDomainValues,
   domainValues,
   DomainFilter,
+  showback,
+  shownext,
 }) => {
   useEffect(() => {
     document.getElementById("a_step2").classList.add("r_active");
@@ -246,26 +248,33 @@ const Domain1 = ({
       <Container className="step2">
         <Row>
           <Col xs={12} md={12}>
-            <div className="rec_btn_wrap" style={{ textAlign: "left" }}>
-              <Link to={"/recruitment_form"}>
-                <div className="rec_btn">
-                  <i className="fa fa-angle-double-left" aria-hidden="true"></i>{" "}
-                  Step 1
-                </div>
-              </Link>
-            </div>
+            {showback && (
+              <div className="rec_btn_wrap" style={{ textAlign: "left" }}>
+                <Link to={"/recruitment_form"}>
+                  <div className="rec_btn">
+                    <i
+                      className="fa fa-angle-double-left"
+                      aria-hidden="true"
+                    ></i>{" "}
+                    Step 1
+                  </div>
+                </Link>
+              </div>
+            )}
             {que}
-            <div className="rec_btn_wrap">
-              <Link to={"/Submit"} onClick={collectValue}>
-                <div className="rec_btn">
-                  Step 3{" "}
-                  <i
-                    className="fa fa-angle-double-right"
-                    aria-hidden="true"
-                  ></i>
-                </div>
-              </Link>
-            </div>
+            {shownext && (
+              <div className="rec_btn_wrap">
+                <Link to={"/Submit"} onClick={collectValue}>
+                  <div className="rec_btn">
+                    Step 3{" "}
+                    <i
+                      className="fa fa-angle-double-right"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                </Link>
+              </div>
+            )}
           </Col>
         </Row>
       </Container>

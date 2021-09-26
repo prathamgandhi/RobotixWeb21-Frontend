@@ -12,7 +12,12 @@ import axios from "axios";
 const RecruitForm = () => {
   const [questions, setQuestion] = useState(null);
   const [values, setValues] = useState(null);
-  const [domainValues, setDomainValues] = useState([]);
+  const [domainValuesALL, setDomainValuesALL] = useState([]);
+  const [domainValuesCORE, setDomainValuesCORE] = useState([]);
+  const [domainValuesDESIGN, setDomainValuesDESIGN] = useState([]);
+  const [domainValuesPR, setDomainValuesPR] = useState([]);
+  const [domainValuesWEB, setDomainValuesWEB] = useState([]);
+  const [domainValuesDOCS, setDomainValuesDOCS] = useState([]);
 
   useEffect(() => {
     api
@@ -25,13 +30,31 @@ const RecruitForm = () => {
   }, []);
 
   const getValues = (values) => {
-    console.log(values);
     setValues(values);
   };
 
-  const getDomainValues = (values) => {
-    console.log(values);
-    setDomainValues(values);
+  const getDomainValuesALL = (values) => {
+    setDomainValuesALL(values);
+  };
+
+  const getDomainValuesCORE = (values) => {
+    setDomainValuesCORE(values);
+  };
+
+  const getDomainValuesDESIGN = (values) => {
+    setDomainValuesDESIGN(values);
+  };
+
+  const getDomainValuesWEB = (values) => {
+    setDomainValuesWEB(values);
+  };
+
+  const getDomainValuesPR = (values) => {
+    setDomainValuesPR(values);
+  };
+
+  const getDomainValuesDOCS = (values) => {
+    setDomainValuesDOCS(values);
   };
 
   return (
@@ -87,9 +110,51 @@ const RecruitForm = () => {
             <Route path="/Domain1">
               <Domain1
                 questions={questions}
-                domainValues={domainValues}
-                getDomainValues={getDomainValues}
+                domainValues={domainValuesALL}
+                getDomainValues={getDomainValuesALL}
                 DomainFilter="ALL"
+                showback={true}
+                shownext={false}
+              />
+              <Domain1
+                questions={questions}
+                domainValues={domainValuesCORE}
+                getDomainValues={getDomainValuesCORE}
+                DomainFilter="CORE"
+                showback={false}
+                shownext={false}
+              />
+              <Domain1
+                questions={questions}
+                domainValues={domainValuesDESIGN}
+                getDomainValues={getDomainValuesDESIGN}
+                DomainFilter="DESIGN"
+                showback={false}
+                shownext={false}
+              />
+              <Domain1
+                questions={questions}
+                domainValues={domainValuesPR}
+                getDomainValues={getDomainValuesPR}
+                DomainFilter="PR"
+                showback={false}
+                shownext={false}
+              />
+              <Domain1
+                questions={questions}
+                domainValues={domainValuesDOCS}
+                getDomainValues={getDomainValuesDOCS}
+                DomainFilter="DOCS"
+                showback={false}
+                shownext={false}
+              />
+              <Domain1
+                questions={questions}
+                domainValues={domainValuesWEB}
+                getDomainValues={getDomainValuesWEB}
+                DomainFilter="WEB"
+                showback={false}
+                shownext={true}
               />
             </Route>
             <Route path="/submit">
