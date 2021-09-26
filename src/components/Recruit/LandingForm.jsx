@@ -156,25 +156,55 @@ const LandingForm = ({ getValues, placeValues }) => {
                   float: "left",
                   width: "40px",
                 }}
-                type="radio"
+                type="checkbox"
                 id="age1"
                 name="age"
                 value="30"
               />
-
               <label style={{ lineHeight: "1" }} htmlFor="age1">
-                radio1
+                Core
               </label>
-
               <input
                 style={{ height: "15px", margin: "0px", width: "40px" }}
-                type="radio"
+                type="checkbox"
                 id="age2"
                 name="age"
                 value="60"
               />
               <label style={{ lineHeight: "1" }} htmlFor="age2">
-                radio2
+                Design
+              </label>
+              <input
+                style={{ height: "15px", margin: "0px", width: "40px" }}
+                type="checkbox"
+                id="age2"
+                name="age"
+                value="60"
+              />
+              <label style={{ lineHeight: "1" }} htmlFor="age2">
+                Documentation
+              </label>
+              <br />
+              <input
+                style={{ height: "15px", margin: "0px", width: "40px" }}
+                type="checkbox"
+                id="age2"
+                name="age"
+                value="60"
+              />
+              <label style={{ lineHeight: "1" }} htmlFor="age2">
+                Public Relations
+              </label>
+              <br />
+              <input
+                style={{ height: "15px", margin: "0px", width: "40px" }}
+                type="checkbox"
+                id="age2"
+                name="age"
+                value="60"
+              />
+              <label style={{ lineHeight: "1" }} htmlFor="age2">
+                Web
               </label>
             </form>
           </Row>
