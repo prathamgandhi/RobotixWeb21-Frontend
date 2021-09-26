@@ -3,7 +3,7 @@ import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../../assets/css/recruitForm.css";
 
-const LandingForm = ({ getValues, placeValues,getSelectedDomains,selDomains }) => {
+const LandingForm = ({ getValues, placeValues }) => {
   useEffect(() => {
     document.getElementById("a_step1").classList.add("r_active");
     document.getElementById("a_step2").classList.remove("r_active");
@@ -19,18 +19,21 @@ const LandingForm = ({ getValues, placeValues,getSelectedDomains,selDomains }) =
     placeValues ? placeValues.whatsapp : ""
   );
 
-  useEffect(()=>{
-    if(selDomains.length!==0){
-      selDomains.map((element)=>{
-        for(let i=1;i<=5;i++){
-          let temp = document.getElementById(`cb${i}`);
-          if(temp.value === element){
-            temp.checked = true ;
+  useEffect(() => {
+    if (localStorage.getItem("selDomains") !== null) {
+      let selDomains = JSON.parse(localStorage.getItem("selDomains"));
+      if (selDomains.length !== 0) {
+        selDomains.map((element) => {
+          for (let i = 1; i <= 5; i++) {
+            let temp = document.getElementById(`cb${i}`);
+            if (temp.value === element) {
+              temp.checked = true;
+            }
           }
-        }
-      })
+        });
+      }
     }
-  },[])
+  }, []);
   const [sem, setSem] = useState(placeValues ? placeValues.sem : 0);
   const setValue = () => {
     let values = {
@@ -42,17 +45,19 @@ const LandingForm = ({ getValues, placeValues,getSelectedDomains,selDomains }) =
     };
     getValues(values);
   };
-  const getDomains = ()=>{
-    let selDoamins  = [];
-    for(let i=1;i<=5;i++){
+  const getDomains = () => {
+    let selDoamins = [];
+    for (let i = 1; i <= 5; i++) {
       let temp = document.getElementById(`cb${i}`);
-      if(temp.checked){
+      if (temp.checked) {
         selDoamins.push(temp.value);
       }
     }
-    console.log(selDoamins);
-    getSelectedDomains(selDomains);
-  }
+
+    console.log(JSON.stringify(selDoamins));
+    localStorage.setItem("selDomains", JSON.stringify(selDoamins));
+    console.log(JSON.parse(localStorage.getItem("selDomains")));
+  };
 
   return (
     <Container className="step1">
@@ -183,7 +188,6 @@ const LandingForm = ({ getValues, placeValues,getSelectedDomains,selDomains }) =
                 }}
                 type="checkbox"
                 id="cb5"
-                name="age"
                 value="CORE"
               />
               <label style={{ lineHeight: "1" }} htmlFor="cb5">
@@ -193,7 +197,6 @@ const LandingForm = ({ getValues, placeValues,getSelectedDomains,selDomains }) =
                 style={{ height: "15px", margin: "0px", width: "40px" }}
                 type="checkbox"
                 id="cb4"
-                name="age"
                 value="DESIGN"
               />
               <label style={{ lineHeight: "1" }} htmlFor="cb4">
@@ -203,7 +206,6 @@ const LandingForm = ({ getValues, placeValues,getSelectedDomains,selDomains }) =
                 style={{ height: "15px", margin: "0px", width: "40px" }}
                 type="checkbox"
                 id="cb3"
-                name="age"
                 value="DOCS"
               />
               <label style={{ lineHeight: "1" }} htmlFor="cb3">
@@ -214,7 +216,6 @@ const LandingForm = ({ getValues, placeValues,getSelectedDomains,selDomains }) =
                 style={{ height: "15px", margin: "0px", width: "40px" }}
                 type="checkbox"
                 id="cb2"
-                name="age"
                 value="PR"
               />
               <label style={{ lineHeight: "1" }} htmlFor="cb2">
@@ -225,7 +226,6 @@ const LandingForm = ({ getValues, placeValues,getSelectedDomains,selDomains }) =
                 style={{ height: "15px", margin: "0px", width: "40px" }}
                 type="checkbox"
                 id="cb1"
-                name="age"
                 value="WEB"
               />
               <label style={{ lineHeight: "1" }} htmlFor="cb1">
@@ -236,7 +236,13 @@ const LandingForm = ({ getValues, placeValues,getSelectedDomains,selDomains }) =
         </Col>
       </Row>
       <div className="rec_btn_wrap">
-        <Link to={"/Domain1"} onClick={()=>{setValue();getDomains()}} >
+        <Link
+          onClick={() => {
+            setValue();
+            getDomains();
+          }}
+          to={"/Domain1"}
+        >
           <div className="rec_btn">
             Step 2{" "}
             <i className="fa fa-angle-double-right" aria-hidden="true"></i>
