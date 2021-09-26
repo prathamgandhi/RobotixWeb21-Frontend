@@ -8,6 +8,7 @@ const Domain1 = ({
   DomainFilter,
   showback,
   shownext,
+  btnid,
 }) => {
   useEffect(() => {
     document.getElementById("a_step2").classList.add("r_active");
@@ -38,7 +39,9 @@ const Domain1 = ({
   let ans = [];
   const collectValue = () => {
     queId.map((element) => {
+      alert(element);
       let temp = null;
+
       let inp = document.getElementById(element);
       if (element.toString().includes("#")) {
         if (inp.checked) {
@@ -54,7 +57,9 @@ const Domain1 = ({
         };
       }
       if (temp !== null) ans.push(temp);
+      console.log(ans);
     });
+    console.log(ans);
     getDomainValues(ans);
   };
 
@@ -263,7 +268,14 @@ const Domain1 = ({
             {que}
             {shownext && (
               <div className="rec_btn_wrap">
-                <Link to={"/Submit"} onClick={collectValue}>
+                <Link
+                  id={btnid}
+                  to={"/Submit"}
+                  onClick={() => {
+                    collectValue();
+                  }}
+                  style={{ display: "none" }}
+                >
                   <div className="rec_btn">
                     Step 3{" "}
                     <i

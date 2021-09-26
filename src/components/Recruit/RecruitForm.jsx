@@ -57,6 +57,25 @@ const RecruitForm = () => {
     setDomainValuesDOCS(values);
   };
 
+  const final = () => {
+    document.getElementById("dobtn1").click();
+
+    if (JSON.parse(localStorage.getItem("selDomains")).includes("CORE")) {
+      document.getElementById("dobtn2").click();
+    }
+    if (JSON.parse(localStorage.getItem("selDomains")).includes("DESIGN")) {
+      document.getElementById("dobtn3").click();
+    }
+    if (JSON.parse(localStorage.getItem("selDomains")).includes("PR")) {
+      document.getElementById("dobtn4").click();
+    }
+    if (JSON.parse(localStorage.getItem("selDomains")).includes("DOCS")) {
+      document.getElementById("dobtn5").click();
+    }
+    if (JSON.parse(localStorage.getItem("selDomains")).includes("WEB")) {
+      document.getElementById("dobtn6").click();
+    }
+  };
   return (
     <div>
       <div className="r_back"></div>
@@ -114,54 +133,83 @@ const RecruitForm = () => {
                 getDomainValues={getDomainValuesALL}
                 DomainFilter="ALL"
                 showback={true}
-                shownext={false}
-              />
-              {JSON.parse(localStorage.getItem("selDomains")).includes("CORE") && <Domain1
-                questions={questions}
-                domainValues={domainValuesCORE}
-                getDomainValues={getDomainValuesCORE}
-                DomainFilter="CORE"
-                showback={false}
-                shownext={false}
-              />}
-              {JSON.parse(localStorage.getItem("selDomains")).includes("DESIGN") && <Domain1
-                questions={questions}
-                domainValues={domainValuesDESIGN}
-                getDomainValues={getDomainValuesDESIGN}
-                DomainFilter="DESIGN"
-                showback={false}
-                shownext={false}
-              />}
-              {JSON.parse(localStorage.getItem("selDomains")).includes("PR") &&<Domain1
-                questions={questions}
-                domainValues={domainValuesPR}
-                getDomainValues={getDomainValuesPR}
-                DomainFilter="PR"
-                showback={false}
-                shownext={false}
-              />}
-              {JSON.parse(localStorage.getItem("selDomains")).includes("DOCS") &&<Domain1
-                questions={questions}
-                domainValues={domainValuesDOCS}
-                getDomainValues={getDomainValuesDOCS}
-                DomainFilter="DOCS"
-                showback={false}
-                shownext={false}
-              />}
-              {JSON.parse(localStorage.getItem("selDomains")).includes("WEB") &&<Domain1
-                questions={questions}
-                domainValues={domainValuesWEB}
-                getDomainValues={getDomainValuesWEB}
-                DomainFilter="WEB"
-                showback={false}
-                shownext={false}
-              />}
-              <Domain1
-                domainValues={[]}
-                getDomainValues={(e)=>"jdsk"}
-                showback={false}
                 shownext={true}
+                btnid="dobtn1"
               />
+              {JSON.parse(localStorage.getItem("selDomains")).includes(
+                "CORE"
+              ) && (
+                <Domain1
+                  questions={questions}
+                  domainValues={domainValuesCORE}
+                  getDomainValues={getDomainValuesCORE}
+                  DomainFilter="CORE"
+                  showback={false}
+                  shownext={true}
+                  btnid="dobtn2"
+                />
+              )}
+              {JSON.parse(localStorage.getItem("selDomains")).includes(
+                "DESIGN"
+              ) && (
+                <Domain1
+                  questions={questions}
+                  domainValues={domainValuesDESIGN}
+                  getDomainValues={getDomainValuesDESIGN}
+                  DomainFilter="DESIGN"
+                  showback={false}
+                  shownext={true}
+                  btnid="dobtn3"
+                />
+              )}
+              {JSON.parse(localStorage.getItem("selDomains")).includes(
+                "PR"
+              ) && (
+                <Domain1
+                  questions={questions}
+                  domainValues={domainValuesPR}
+                  getDomainValues={getDomainValuesPR}
+                  DomainFilter="PR"
+                  showback={false}
+                  shownext={true}
+                  btnid="dobtn4"
+                />
+              )}
+              {JSON.parse(localStorage.getItem("selDomains")).includes(
+                "DOCS"
+              ) && (
+                <Domain1
+                  questions={questions}
+                  domainValues={domainValuesDOCS}
+                  getDomainValues={getDomainValuesDOCS}
+                  DomainFilter="DOCS"
+                  showback={false}
+                  shownext={true}
+                  btnid="dobtn1"
+                  btnid="dobtn5"
+                />
+              )}
+              {JSON.parse(localStorage.getItem("selDomains")).includes(
+                "WEB"
+              ) && (
+                <Domain1
+                  questions={questions}
+                  domainValues={domainValuesWEB}
+                  getDomainValues={getDomainValuesWEB}
+                  DomainFilter="WEB"
+                  showback={false}
+                  shownext={true}
+                  btnid="dobtn6"
+                />
+              )}
+
+              <button
+                onClick={() => {
+                  final();
+                }}
+              >
+                click
+              </button>
             </Route>
             <Route path="/submit">
               <Submit />
