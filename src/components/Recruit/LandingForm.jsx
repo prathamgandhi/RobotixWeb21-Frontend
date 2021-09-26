@@ -50,6 +50,7 @@ const LandingForm = ({ getValues, placeValues,getSelectedDomains,selDomains }) =
         selDoamins.push(temp.value);
       }
     }
+    console.log(selDoamins);
     getSelectedDomains(selDomains);
   }
 
@@ -235,7 +236,7 @@ const LandingForm = ({ getValues, placeValues,getSelectedDomains,selDomains }) =
         </Col>
       </Row>
       <div className="rec_btn_wrap">
-        <Link to={"/Domain1"} onClick={setValue,getDomains} >
+        <Link to={"/Domain1"} onClick={()=>{setValue();getDomains()}} >
           <div className="rec_btn">
             Step 2{" "}
             <i className="fa fa-angle-double-right" aria-hidden="true"></i>
