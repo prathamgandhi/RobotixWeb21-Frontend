@@ -89,6 +89,7 @@ const RecruitForm = () => {
                 questions={questions}
                 domainValues={domainValues}
                 getDomainValues={getDomainValues}
+                DomainFilter="ALL"
               />
             </Route>
             <Route path="/submit">

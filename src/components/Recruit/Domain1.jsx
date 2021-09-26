@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { useEffect, useState } from "react";
-const Domain1 = ({ questions, getDomainValues, domainValues }) => {
+const Domain1 = ({
+  questions,
+  getDomainValues,
+  domainValues,
+  DomainFilter,
+}) => {
   useEffect(() => {
     document.getElementById("a_step2").classList.add("r_active");
     document.getElementById("a_step1").classList.remove("r_active");
@@ -50,8 +55,16 @@ const Domain1 = ({ questions, getDomainValues, domainValues }) => {
     });
     getDomainValues(ans);
   };
+  let arr = [];
+  const getArray = () => {
+    for (var x in questions) {
+      if (x === DomainFilter) {
+        arr = questions.x;
+      }
+    }
+  };
 
-  que = questions.ALL.map((element) => {
+  que = questions.ALL.toString().map((element) => {
     // console.log(element);
     if (element.question_type === "MultipleChoice") {
       queId.push(element.question_id + "#1");
