@@ -15,6 +15,7 @@ const Submit = ({ values, domainValues }) => {
     ID: values.ID,
     Email: values.Email,
     Mobile: values.Mobile,
+    Domain: ["docs"],
     Question: {
       All: domainValues.ALL,
       Core: domainValues.CORE,
@@ -24,17 +25,17 @@ const Submit = ({ values, domainValues }) => {
       Docs: domainValues.DOCS,
     },
   };
-  console.log(payload);
-  const postData = ()=>{
+  console.log(JSON.stringify(payload));
+  const postData = () => {
     api
-    .post("/recruitment/response", payload)
-    .then((response) => {
-      console.log(response);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-  }
+      .post("/recruitment/response/", JSON.stringify(payload))
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   return (
     <div>
@@ -51,7 +52,9 @@ const Submit = ({ values, domainValues }) => {
             </div>
 
             <div className="submit_form">
-              <div className="submit_form_btn" onClick={postData}>Submit Your Response</div>
+              <div className="submit_form_btn" onClick={postData}>
+                Submit Your Response
+              </div>
             </div>
           </Col>
         </Row>
