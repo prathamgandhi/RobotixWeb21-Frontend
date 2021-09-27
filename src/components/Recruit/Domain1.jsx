@@ -39,18 +39,22 @@ const Domain1 = ({
   const collectValue = (queId) => {
     queId.map((element) => {
       let temp = null;
+      let checkMulti = true;
       let inp = document.getElementById(element);
       if (element.toString().includes("#")) {
         if (inp.checked) {
           ans.map((e) => {
             if (e.ID === element.substring(0, element.length - 2)) {
-              e.Answer: ;
+              e.Answer = `${e.Answer},${inp.value}`;
+              checkMulti = false;
             }
           });
-          temp = {
-            ID: element.substring(0, element.length - 2),
-            Answer: inp.value,
-          };
+          if(checkMulti){
+            temp = {
+              ID: element.substring(0, element.length - 2),
+              Answer: inp.value,
+            };
+          }
         }
       } else {
         temp = {
