@@ -25,7 +25,8 @@ const Submit = ({ values, domainValues }) => {
     },
   };
   console.log(payload);
-  api
+  const postData = ()=>{
+    api
     .post("/recruitment/response", payload)
     .then((response) => {
       console.log(response);
@@ -33,7 +34,7 @@ const Submit = ({ values, domainValues }) => {
     .catch((error) => {
       console.log(error);
     });
-  console.log(values, domainValues);
+  }
 
   return (
     <div>
@@ -50,7 +51,7 @@ const Submit = ({ values, domainValues }) => {
             </div>
 
             <div className="submit_form">
-              <div className="submit_form_btn">Submit Your Response</div>
+              <div className="submit_form_btn" onClick={postData}>Submit Your Response</div>
             </div>
           </Col>
         </Row>
