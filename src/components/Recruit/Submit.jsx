@@ -1,12 +1,21 @@
 import { Link } from "react-router-dom";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { useEffect, useState } from "react";
-const Submit = ({ questions }) => {
+import api from "../../service";
+
+const Submit = ({ values , domainValues }) => {
   useEffect(() => {
     document.getElementById("a_step3").classList.add("r_active");
     document.getElementById("a_step1").classList.remove("r_active");
     document.getElementById("a_step2").classList.remove("r_active");
   });
+  useEffect(() => {
+    api
+      .post("/recruitment/response",{
+        
+      })
+      .catch((error) => {});
+  }, []);
 
   return (
     <div>
