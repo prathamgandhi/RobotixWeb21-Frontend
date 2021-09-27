@@ -34,26 +34,32 @@ const RecruitForm = () => {
   };
 
   const getDomainValuesALL = (values) => {
+    console.log(values);
     setDomainValuesALL(values);
   };
 
   const getDomainValuesCORE = (values) => {
+    console.log(values);
     setDomainValuesCORE(values);
   };
 
   const getDomainValuesDESIGN = (values) => {
+    console.log(values);
     setDomainValuesDESIGN(values);
   };
 
   const getDomainValuesWEB = (values) => {
+    console.log(values);
     setDomainValuesWEB(values);
   };
 
   const getDomainValuesPR = (values) => {
+    console.log(values);
     setDomainValuesPR(values);
   };
 
   const getDomainValuesDOCS = (values) => {
+    console.log(values);
     setDomainValuesDOCS(values);
   };
 

@@ -23,7 +23,6 @@ const Domain1 = ({
     if (domainValues.length !== 0) {
       domainValues.map((e) => {
         let id = e.ID;
-        console.log(e.ID);
         for (let i = 1; i <= 4; i++) {
           let temp = document.getElementById(`${id}#${i}`);
           if (temp !== null) {
@@ -37,11 +36,9 @@ const Domain1 = ({
   }, []);
 
   let ans = [];
-  const collectValue = () => {
+  const collectValue = (queId) => {
     queId.map((element) => {
-      alert(element);
       let temp = null;
-
       let inp = document.getElementById(element);
       if (element.toString().includes("#")) {
         if (inp.checked) {
@@ -57,11 +54,15 @@ const Domain1 = ({
         };
       }
       if (temp !== null) ans.push(temp);
-      console.log(ans);
     });
-    console.log(ans);
     getDomainValues(ans);
   };
+
+  const [abc,setAbc] = useState([]);
+  const addQueId = (value) =>{
+  queId.push(value);
+  setAbc(queId);
+  }
 
   useEffect(() => {
     let que;
@@ -72,10 +73,10 @@ const Domain1 = ({
           questions[x].map((element) => {
             // console.log(element);
             if (element.question_type === "MultipleChoice") {
-              queId.push(element.question_id + "#1");
-              queId.push(element.question_id + "#2");
-              queId.push(element.question_id + "#3");
-              queId.push(element.question_id + "#4");
+              addQueId(`${element.question_id}#1`);
+              addQueId(`${element.question_id}#2`);
+              addQueId(`${element.question_id}#3`);
+              addQueId(`${element.question_id}#4`);
               return (
                 <div key={element.question_id}>
                   <div className="ques">
@@ -111,10 +112,10 @@ const Domain1 = ({
                 </div>
               );
             } else if (element.question_type === "SingleChoice") {
-              queId.push(element.question_id + "#1");
-              queId.push(element.question_id + "#2");
-              queId.push(element.question_id + "#3");
-              queId.push(element.question_id + "#4");
+              addQueId(`${element.question_id}#1`);
+              addQueId(`${element.question_id}#2`);
+              addQueId(`${element.question_id}#3`);
+              addQueId(`${element.question_id}#4`);
               return (
                 <div key={element.question_id}>
                   <div>
@@ -227,7 +228,7 @@ const Domain1 = ({
                 </div>
               );
             } else if (element.question_type === "Answer") {
-              queId.push(element.question_id);
+              addQueId(`${element.question_id}`);
               return (
                 <div key={element.question_id}>
                   <div>
@@ -272,7 +273,7 @@ const Domain1 = ({
                   id={btnid}
                   to={"/Submit"}
                   onClick={() => {
-                    collectValue();
+                    collectValue(abc);
                   }}
                   style={{ display: "none" }}
                 >
