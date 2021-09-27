@@ -28,9 +28,9 @@ const RecruitForm = () => {
       .catch((error) => {});
   }, []);
 
-  let domainValues;
+  const [domainValues,setDomainValues] = useState(null);
   useEffect(()=>{
-    domainValues={
+    const temp={
       "ALL" : domainValuesALL,
       "CORE": domainValuesCORE,
       "DESIGN" : domainValuesDESIGN,
@@ -38,6 +38,7 @@ const RecruitForm = () => {
       "WEB" : domainValuesWEB,
       "DOCS" : domainValuesDOCS
     }
+    setDomainValues(temp);
   },[domainValuesALL]);
 
   const getValues = (values) => {

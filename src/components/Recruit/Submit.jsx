@@ -9,13 +9,14 @@ const Submit = ({ values , domainValues }) => {
     document.getElementById("a_step1").classList.remove("r_active");
     document.getElementById("a_step2").classList.remove("r_active");
   });
-  useEffect(() => {
-    api
-      .post("/recruitment/response",{
-        
-      })
-      .catch((error) => {});
-  }, []);
+  // useEffect(() => {
+  //   api
+  //     .post("/recruitment/response",{
+
+  //     })
+  //     .catch((error) => {});
+  // }, []);
+  console.log(values,domainValues);
 
   return (
     <div>
