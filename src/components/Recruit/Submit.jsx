@@ -3,20 +3,37 @@ import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import api from "../../service";
 
-const Submit = ({ values , domainValues }) => {
+const Submit = ({ values, domainValues }) => {
   useEffect(() => {
     document.getElementById("a_step3").classList.add("r_active");
     document.getElementById("a_step1").classList.remove("r_active");
     document.getElementById("a_step2").classList.remove("r_active");
   });
-  // useEffect(() => {
-  //   api
-  //     .post("/recruitment/response",{
 
-  //     })
-  //     .catch((error) => {});
-  // }, []);
-  console.log(values,domainValues);
+  const payload = {
+    Name: values.Name,
+    ID: values.ID,
+    Email: values.Email,
+    Mobile: values.Mobile,
+    Question: {
+      All: domainValues.ALL,
+      Core: domainValues.CORE,
+      Design: domainValues.DESIGN,
+      PR: domainValues.PR,
+      Web: domainValues.WEB,
+      Docs: domainValues.DOCS,
+    },
+  };
+  console.log(payload);
+  api
+    .post("/recruitment/response", payload)
+    .then((response) => {
+      console.log(response);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+  console.log(values, domainValues);
 
   return (
     <div>

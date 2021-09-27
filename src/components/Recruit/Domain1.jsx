@@ -42,6 +42,11 @@ const Domain1 = ({
       let inp = document.getElementById(element);
       if (element.toString().includes("#")) {
         if (inp.checked) {
+          ans.map((e) => {
+            if (e.ID === element.substring(0, element.length - 2)) {
+              e.Answer: ;
+            }
+          });
           temp = {
             ID: element.substring(0, element.length - 2),
             Answer: inp.value,
@@ -58,11 +63,11 @@ const Domain1 = ({
     getDomainValues(ans);
   };
 
-  const [abc,setAbc] = useState([]);
-  const addQueId = (value) =>{
-  queId.push(value);
-  setAbc(queId);
-  }
+  const [abc, setAbc] = useState([]);
+  const addQueId = (value) => {
+    queId.push(value);
+    setAbc(queId);
+  };
 
   useEffect(() => {
     let que;

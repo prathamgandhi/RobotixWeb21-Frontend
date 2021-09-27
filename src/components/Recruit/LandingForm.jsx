@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../../assets/css/recruitForm.css";
+import { v4 as uuidv4 } from "uuid";
 
 const LandingForm = ({ getValues, placeValues }) => {
   useEffect(() => {
@@ -37,11 +38,10 @@ const LandingForm = ({ getValues, placeValues }) => {
   const [sem, setSem] = useState(placeValues ? placeValues.sem : 0);
   const setValue = () => {
     let values = {
-      name,
-      email,
-      contact,
-      whatsapp,
-      sem,
+      Name: name,
+      ID: uuidv4(),
+      Email: email,
+      Mobile: contact,
     };
     getValues(values);
   };
