@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { useState, Fragment, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import api from "../service";
 import { teamAction } from "../store/actions/actions.js";
@@ -6,19 +6,25 @@ import Reveal from "react-reveal/Reveal";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
+import TeamModal from "./TeamModal";
+import TeamDetailsModal from "./TeamDetailsModal";
 // import MailOutlineIcon from '@material-ui/icons/MailOutline';
 // import PhoneIcon from "@material-ui/icons/Phone";
 export const Team = () => {
+  const [show, setShow] = useState(false);
+  const [modalEmail, setModalEmail] = useState("");
+  const [verified, setVerified] = useState(false);
+  const [member, setMember] = useState(null);
   let teamData = useSelector((state) => state.teamReducer);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (Object.keys(teamData.teams).length === 0) {
+    if (Object.keys(teamData.teams).length === 0 || !verified) {
       api
         .get("/about/team/")
         .then((response) => {
           let newTeam = response.data;
-
+          console.log(response);
           for (const key in newTeam) {
             if (newTeam[key].length === 0) {
               delete newTeam[key];
@@ -34,7 +40,7 @@ export const Team = () => {
     if (teamData.loading === false) {
       window.activateTeam();
     }
-  }, []);
+  }, [verified]);
 
   const changeDomain = (domain, j) => {
     window.TeamDomain(domain, j);
@@ -134,6 +140,11 @@ export const Team = () => {
                                   alt="team-profile-1"
                                   className="rounded-circle"
                                   width="128"
+                                  onDoubleClick={() => {
+                                    setShow(true);
+                                    setModalEmail(member.email_id);
+                                    setMember(member);
+                                  }}
                                 />
                               </div>
                               <div className="profile align-self-center">
@@ -177,6 +188,13 @@ export const Team = () => {
           })}
         </Fragment>
       )}
+      <TeamModal
+        show={show}
+        setShow={setShow}
+        email={modalEmail}
+        setVerified={setVerified}
+      />
+      <TeamDetailsModal show={verified} setShow={setVerified} member={member} />
     </Fragment>
   );
 };

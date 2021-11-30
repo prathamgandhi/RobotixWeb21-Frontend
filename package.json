@@ -11,6 +11,7 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
+    "crypto-js": "^4.1.1",
     "css-doodle": "^0.17.3",
     "js-cookie": "^2.2.1",
     "material-ui": "^0.20.2",
@@ -55,5 +56,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://871b-117-228-222-152.ngrok.io"
+  "proxy": "https://robotixnitrr.herokuapp.com/"
 }
